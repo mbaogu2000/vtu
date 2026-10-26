@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#073d31">
+    <meta name="description" content="Choose an exam e-pin from VTU9JA.">
+    <title>Exam Pins — VTU9JA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./dist/styles.css">
+    <link rel="stylesheet" href="./buy-airtime.css">
+    <link rel="stylesheet" href="./buy-data.css">
+    <link rel="stylesheet" href="./exam-pins.css">
+  </head>
+  <body class="airtime-page exam-pins-page">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-contact">
+          <a href="tel:+2348171234567"><i class="bi bi-telephone-fill"></i> +234 817 123 4567</a>
+          <a href="mailto:support@vtu9ja.ng"><i class="bi bi-envelope"></i> support@vtu9ja.ng</a>
+        </div>
+        <div class="topbar-account">
+          <a href="./login.html"><i class="bi bi-person-fill"></i> Login</a>
+          <a href="./register.html"><i class="bi bi-person-plus-fill"></i> Register</a>
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html#home" aria-label="VTU9JA home">
+          <span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
+          <span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i class="bi bi-list"></i></button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="./index.html#home">Home</a>
+          <a href="./buy-airtime.html">Airtime</a>
+          <a href="./buy-data.html">Data</a>
+          <a href="./pay-bills.html?type=tv">TV</a>
+          <a href="./pay-bills.html?type=electricity">Electricity</a>
+          <a class="active" href="./exam-pins.html" aria-current="page">Exam Pins</a>
+          <a href="./more-services.html">More Services</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <a class="button button-nav" href="./dashboard.html"><i class="bi bi-grid-1x2-fill"></i> My Dashboard</a>
+      </div>
+    </header>
+
+    <main class="airtime-main">
+      <div class="container airtime-container">
+        <nav class="airtime-breadcrumb" aria-label="Breadcrumb">
+          <a href="./index.html">Home</a><i class="bi bi-chevron-right" aria-hidden="true"></i><span aria-current="page">Exam Pins</span>
+        </nav>
+
+        <div class="airtime-layout exam-layout">
+          <section class="airtime-form-card" aria-labelledby="exam-title">
+            <div class="airtime-heading">
+              <span class="airtime-heading-icon exam-heading-icon"><i class="bi bi-mortarboard-fill"></i></span>
+              <div><span class="airtime-kicker">GET EXAM-READY</span><h1 id="exam-title">Buy exam pins</h1></div>
+            </div>
+            <p class="airtime-intro">Choose an exam pin, set the quantity and enter your phone number to review your order.</p>
+
+            <form id="exam-form">
+              <fieldset class="airtime-fieldset exam-type-fieldset">
+                <legend>Select exam pin</legend>
+                <div class="data-plan-options exam-options">
+                  <label class="data-plan-option exam-option">
+                    <input type="radio" name="exam" value="WAEC Result Checker" data-price="3500" required>
+                    <span class="exam-icon exam-icon-waec">W</span>
+                    <span class="data-plan-details"><strong>WAEC Result Checker</strong><small>Check WAEC results online</small></span>
+                    <strong class="data-plan-price">₦3,500</strong>
+                  </label>
+                  <label class="data-plan-option exam-option">
+                    <input type="radio" name="exam" value="NECO Result Checker" data-price="1500" required>
+                    <span class="exam-icon exam-icon-neco">N</span>
+                    <span class="data-plan-details"><strong>NECO Result Checker</strong><small>Check NECO results online</small></span>
+                    <strong class="data-plan-price">₦1,500</strong>
+                  </label>
+                  <label class="data-plan-option exam-option">
+                    <input type="radio" name="exam" value="JAMB ePIN" data-price="8000" required>
+                    <span class="exam-icon exam-icon-jamb">J</span>
+                    <span class="data-plan-details"><strong>JAMB ePIN</strong><small>UTME registration ePIN</small></span>
+                    <strong class="data-plan-price">₦8,000</strong>
+                  </label>
+                  <label class="data-plan-option exam-option">
+                    <input type="radio" name="exam" value="NABTEB Result Checker" data-price="1000" required>
+                    <span class="exam-icon exam-icon-nabteb">N</span>
+                    <span class="data-plan-details"><strong>NABTEB Result Checker</strong><small>Check NABTEB results online</small></span>
+                    <strong class="data-plan-price">₦1,000</strong>
+                  </label>
+                </div>
+                <small class="plan-note">Sample pin prices shown for demonstration.</small>
+              </fieldset>
+
+              <div class="exam-fields">
+                <div class="airtime-field exam-quantity-field">
+                  <label for="exam-quantity">Quantity</label>
+                  <select class="exam-select" id="exam-quantity" name="quantity" required>
+                    <option value="1" selected>1 pin</option>
+                    <option value="2">2 pins</option>
+                    <option value="3">3 pins</option>
+                    <option value="4">4 pins</option>
+                    <option value="5">5 pins</option>
+                  </select>
+                  <small>Choose how many pins you need.</small>
+                </div>
+                <div class="airtime-field">
+                  <label for="exam-phone">Phone number</label>
+                  <div class="airtime-input-wrap"><i class="bi bi-telephone"></i><input id="exam-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 08012345678" minlength="10" maxlength="14" required></div>
+                  <small>Enter a phone number for your order details.</small>
+                </div>
+              </div>
+
+              <button class="airtime-submit" type="submit">Continue to review <i class="bi bi-arrow-right"></i></button>
+              <p class="airtime-notice" id="exam-notice" role="status" aria-live="polite"></p>
+            </form>
+          </section>
+
+          <aside class="airtime-summary exam-summary" aria-labelledby="summary-title">
+            <span class="summary-eyebrow"><i class="bi bi-receipt"></i> ORDER SUMMARY</span>
+            <h2 id="summary-title">Your exam pin</h2>
+            <div class="summary-network"><span class="summary-network-icon exam-summary-icon"><i class="bi bi-mortarboard-fill"></i></span><span><small>Exam pin</small><strong id="summary-exam">Choose an exam pin</strong></span></div>
+            <div class="summary-detail"><span>Phone number</span><strong id="summary-phone">Not entered</strong></div>
+            <div class="summary-detail"><span>Quantity</span><strong id="summary-quantity">1 pin</strong></div>
+            <div class="summary-detail"><span>Price per pin</span><strong id="summary-unit-price">₦0.00</strong></div>
+            <div class="summary-total"><span>Total to pay</span><strong id="summary-total">₦0.00</strong></div>
+            <p class="summary-security"><i class="bi bi-shield-check"></i> Your details are protected</p>
+            <p class="airtime-demo-note"><i class="bi bi-info-circle"></i> Demo page — no payment will be taken and no exam pin will be issued.</p>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container airtime-footer">
+        <a class="brand brand-light" href="./index.html#home"><span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span><span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span></a>
+        <p>Need help? <a href="./contact.html">Contact our support team</a>.</p>
+        <span>© 2025 VTU9JA. All rights reserved.</span>
+      </div>
+    </footer>
+    <div class="airtime-toast" id="exam-toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./exam-pins.js"></script>
+  </body>
+</html>

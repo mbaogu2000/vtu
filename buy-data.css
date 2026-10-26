@@ -1,0 +1,85 @@
+.data-plan-fieldset {
+  margin-bottom: 18px;
+}
+
+.data-plan-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.data-plan-option {
+  min-width: 0;
+  min-height: 62px;
+  padding: 10px 11px 10px 34px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #fbfcfb;
+  border: 1px solid #e6ede8;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: border-color 0.18s, background 0.18s, box-shadow 0.18s;
+}
+
+.data-plan-option:has(input:checked) {
+  background: #f2faf5;
+  border-color: #078849;
+  box-shadow: 0 0 0 2px #07884915;
+}
+
+.data-plan-option input {
+  position: absolute;
+  top: 50%;
+  left: 11px;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  accent-color: #078849;
+  transform: translateY(-50%);
+}
+
+.data-plan-details {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.data-plan-details strong {
+  color: #29483d;
+  font-size: 11px;
+}
+
+.data-plan-details small {
+  color: #8b9a92;
+  font-size: 9px;
+}
+
+.data-plan-price {
+  color: #078849;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.plan-note {
+  display: block;
+  margin-top: 8px;
+  color: #98a59e;
+  font-size: 9px;
+}
+
+.data-summary .summary-total {
+  margin-top: 0;
+}
+
+.data-phone-field {
+  margin-top: 16px;
+}
+
+@media (max-width: 480px) {
+  .data-plan-options {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

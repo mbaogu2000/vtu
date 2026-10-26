@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#006b3c">
+    <meta name="description" content="Top up airtime, buy data, pay bills and do more instantly with VTU9JA.">
+    <title>VTU9JA — Fast, Secure, Reliable</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./dist/styles.css">
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-contact">
+          <a href="tel:+2348171234567"><i class="bi bi-telephone-fill"></i> +234 817 123 4567</a>
+          <a href="mailto:support@vtu9ja.ng"><i class="bi bi-envelope"></i> support@vtu9ja.ng</a>
+        </div>
+        <div class="topbar-account">
+          <a href="./login.html"><i class="bi bi-person-fill"></i> Login</a>
+          <a href="./register.html"><i class="bi bi-person-plus-fill"></i> Register</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="VTU9JA home">
+          <span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
+          <span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i class="bi bi-list"></i></button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="active" href="#home">Home</a>
+          <a href="./buy-airtime.html">Airtime</a>
+          <a href="./buy-data.html">Data</a>
+          <a href="./pay-bills.html?type=tv">TV</a>
+          <a href="./pay-bills.html?type=electricity">Electricity</a>
+          <a href="./exam-pins.html">Exam Pins</a>
+          <a href="./more-services.html">More Services</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <a class="button button-nav" href="./login.html"><i class="bi bi-person-fill"></i> Login / Register</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <span class="eyebrow eyebrow-bright">Welcome to VTU9JA</span>
+            <h1>Top Up, Pay Bills,<br>Do More — <span>Instantly!</span></h1>
+            <p class="hero-description">Buy airtime, data, TV subscription, electricity bills and more at the best rates. Fast, secure and reliable.</p>
+            <div class="hero-perks">
+              <div class="hero-perk"><span class="perk-icon"><i class="bi bi-lightning-charge-fill"></i></span><span>Instant<br>Delivery</span></div>
+              <div class="hero-perk"><span class="perk-icon"><i class="bi bi-shield-check"></i></span><span>100%<br>Secure</span></div>
+              <div class="hero-perk"><span class="perk-icon"><i class="bi bi-hand-thumbs-up"></i></span><span>Best<br>Rates</span></div>
+              <div class="hero-perk"><span class="perk-icon"><i class="bi bi-headset"></i></span><span>24/7<br>Support</span></div>
+            </div>
+            <form class="quick-buy" id="quick-buy">
+              <label class="phone-field">
+                <i class="bi bi-phone"></i>
+                <span class="sr-only">Phone number</span>
+                <input type="tel" name="phone" placeholder="Enter Phone Number" inputmode="tel" required minlength="10" maxlength="14">
+              </label>
+              <label class="service-field">
+                <span class="sr-only">Select service</span>
+                <select name="service" required>
+                  <option value="" disabled selected>Select Service</option>
+                  <option>Airtime</option><option>Data</option><option>TV Subscription</option>
+                  <option>Electricity Bills</option><option>Exam Pins</option><option>More Services</option>
+                </select>
+                <i class="bi bi-chevron-down"></i>
+              </label>
+              <button class="button quick-buy-button" type="submit"><i class="bi bi-send-fill"></i> Buy Now</button>
+            </form>
+          </div>
+
+          <div class="hero-visual" aria-label="VTU9JA mobile app preview">
+            <div class="connected-note">Stay Connected<br><span>Everyday!</span><i></i></div>
+            <div class="network-cloud" aria-hidden="true">
+              <span class="network-logo network-mtn">MTN</span>
+              <span class="network-logo network-airtel">airtel</span>
+              <span class="network-logo network-glo">glo</span>
+              <span class="network-logo network-9mobile">9<br><small>mobile</small></span>
+            </div>
+            <div class="supported-pill"><i class="bi bi-check-circle-fill"></i> All Networks<br>Supported</div>
+            <div class="phone-mock">
+              <div class="phone-notch"><span></span></div>
+              <div class="phone-screen">
+                <div class="phone-status"><span>9:41</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                <div class="phone-brand"><span class="mini-mark"><i class="bi bi-lightning-charge-fill"></i></span><b>VTU9<span>JA</span></b><i class="bi bi-search"></i><i class="bi bi-person-circle"></i></div>
+                <div class="wallet-card"><span>Wallet Balance</span><strong>₦ 12,500.00</strong><button type="button">Fund Wallet</button></div>
+                <div class="phone-services">
+                  <div><i class="bi bi-phone"></i><span>Airtime</span></div><div><i class="bi bi-wifi"></i><span>Data</span></div><div><i class="bi bi-tv"></i><span>TV</span></div>
+                  <div><i class="bi bi-lightning-charge-fill"></i><span>Electricity</span></div><div><i class="bi bi-mortarboard-fill"></i><span>Exam Pins</span></div><div><i class="bi bi-three-dots"></i><span>More</span></div>
+                </div>
+                <div class="transactions-heading"><b>Recent Transactions</b><a href="#services">View All</a></div>
+                <div class="transaction-row"><span class="mini-network">MTN</span><span>Data Subscription<small>MTN 1.5GB</small></span><b>₦ 1,200</b></div>
+                <div class="transaction-row"><span class="mini-network mini-network-airtel">A</span><span>Airtime Top-up<small>Airtel · Today</small></span><b>₦ 500</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section-pad" id="services">
+        <div class="container services-layout">
+          <div class="section-intro">
+            <span class="eyebrow">Our Services</span>
+            <h2>Everything You Need<br>in One Place</h2>
+            <p>We provide a seamless platform to help you stay connected and pay your bills with ease.</p>
+            <a class="button" href="./register.html">Get Started <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="service-grid">
+            <a class="service-card card-blue" href="#get-started"><span class="service-icon"><i class="bi bi-phone"></i></span><h3>Airtime</h3><p>Buy airtime for all networks at the best rates.</p><span class="service-link">Buy Now <i class="bi bi-arrow-right"></i></span></a>
+            <a class="service-card card-green" href="#get-started"><span class="service-icon"><i class="bi bi-globe"></i></span><h3>Data</h3><p>Get data for browsing, streaming and more.</p><span class="service-link">Buy Now <i class="bi bi-arrow-right"></i></span></a>
+            <a class="service-card card-purple" href="./pay-bills.html?type=tv"><span class="service-icon"><i class="bi bi-tv"></i></span><h3>TV Subscription</h3><p>Pay for your favorite TV channels.</p><span class="service-link">Buy Now <i class="bi bi-arrow-right"></i></span></a>
+            <a class="service-card card-yellow" href="./pay-bills.html?type=electricity"><span class="service-icon"><i class="bi bi-lightning-charge-fill"></i></span><h3>Electricity Bills</h3><p>Pay your electricity bills instantly.</p><span class="service-link">Buy Now <i class="bi bi-arrow-right"></i></span></a>
+            <a class="service-card card-red" href="./exam-pins.html"><span class="service-icon"><i class="bi bi-mortarboard-fill"></i></span><h3>Exam Pins</h3><p>Buy WAEC, NECO, JAMB and other exam pins.</p><span class="service-link">Buy Now <i class="bi bi-arrow-right"></i></span></a>
+            <a class="service-card card-teal" href="#get-started"><span class="service-icon"><i class="bi bi-tv"></i></span><h3>Cable TV</h3><p>Enjoy your favorite cable TV channels.</p><span class="service-link">Buy Now <i class="bi bi-arrow-right"></i></span></a>
+            <a class="service-card card-indigo" href="#get-started"><span class="service-icon"><i class="bi bi-router-fill"></i></span><h3>Internet Services</h3><p>Buy internet bundles and data plans.</p><span class="service-link">Buy Now <i class="bi bi-arrow-right"></i></span></a>
+            <a class="service-card card-slate" href="./more-services.html"><span class="service-icon"><i class="bi bi-three-dots"></i></span><h3>More Services</h3><p>Airtime to Cash, Gift Card, and more.</p><span class="service-link">View All <i class="bi bi-arrow-right"></i></span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-us" id="why-us">
+        <div class="container why-layout">
+          <div class="why-art" aria-hidden="true">
+            <!-- <div class="art-sun"></div><div class="art-person"><div class="art-hair"></div><div class="art-face"></div><div class="art-body"></div><div class="art-phone"><i class="bi bi-phone"></i></div></div> -->
+            <img src="/img/fra.png" height="400px">
+            <div class="art-caption" style="color: greenyellow;">Simple.<br>Fast.<br>Reliable.<i></i></div>
+          </div>
+          <div class="why-content">
+            <h2>Why Choose VTU9JA?</h2>
+            <p>We are committed to providing you with the best VTU services with speed, security and excellent customer support.</p>
+            <div class="benefit-grid">
+              <div class="benefit"><span><i class="bi bi-lightning-charge-fill"></i></span><h3>Instant Delivery</h3><p>Get your services in seconds.</p></div>
+              <div class="benefit"><span><i class="bi bi-shield-check"></i></span><h3>Safe &amp; Secure</h3><p>Your data and transactions are always protected.</p></div>
+              <div class="benefit"><span><i class="bi bi-star-fill"></i></span><h3>Best Prices</h3><p>We offer the most competitive rates in the market.</p></div>
+              <div class="benefit"><span><i class="bi bi-headset"></i></span><h3>24/7 Support</h3><p>Our support team is always ready to help you.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works section-pad" id="get-started">
+        <div class="container">
+          <div class="center-heading"><span class="eyebrow">How It Works</span><h2>Get Started in 3 Easy Steps</h2><p>It's quick and simple. Follow these steps to start using VTU9JA today.</p></div>
+          <div class="steps">
+            <a class="step" href="./register.html"><span class="step-number">1</span><i class="bi bi-person-fill"></i><div><h3>Create Account</h3><p>Sign up with your phone number and get verified.</p></div></a>
+            <i class="bi bi-chevron-right step-arrow"></i>
+            <div class="step"><span class="step-number">2</span><i class="bi bi-wallet2"></i><div><h3>Fund Wallet</h3><p>Add money to your wallet using our secure payment options.</p></div></div>
+            <i class="bi bi-chevron-right step-arrow"></i>
+            <div class="step"><span class="step-number">3</span><i class="bi bi-lightning-charge-fill"></i><div><h3>Buy Service</h3><p>Select your service, enter details and make payment.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trusted">
+        <div class="container trusted-inner">
+          <div><h2>Trusted by Millions</h2><p>We serve customers across Nigeria and beyond.</p></div>
+          <div class="trusted-logos" aria-label="Supported providers"><span class="logo-mtn">MTN</span><span class="logo-airtel">airtel</span><span class="logo-glo">glo</span><span class="logo-9mobile">9<small>mobile</small></span><span class="logo-dstv">DStv</span><span class="logo-gotv">GOtv</span><span class="logo-startimes">✦ StarTimes</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+      <div class="container footer-main">
+        <div class="footer-about">
+          <a class="brand brand-light" href="#home"><span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span><span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span></a>
+          <p>Your one-stop VTU platform for airtime, data, TV subscription, electricity bills and more. Stay connected. Always.</p>
+          <div class="social-links"><a href="#footer" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#footer" aria-label="X"><i class="bi bi-twitter-x"></i></a><a href="#footer" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#footer" aria-label="YouTube"><i class="bi bi-youtube"></i></a></div>
+        </div>
+        <div class="footer-column"><h2>Quick Links</h2><div class="footer-link-grid"><a href="#home">Home</a><a href="./exam-pins.html">Exam Pins</a><a href="./buy-airtime.html">Airtime</a><a href="./more-services.html">More Services</a><a href="./buy-data.html">Data</a><a href="./about.html">About Us</a><a href="./pay-bills.html?type=tv">TV Subscription</a><a href="./contact.html">Contact</a><a href="./pay-bills.html?type=electricity">Electricity Bills</a></div></div>
+        <div class="footer-column"><h2>Help &amp; Support</h2><a href="#footer">FAQs</a><a href="#footer">Terms &amp; Conditions</a><a href="#footer">Privacy Policy</a><a href="#footer">Refund Policy</a><a href="#get-started">How It Works</a></div>
+        <div class="footer-newsletter"><h2>Subscribe to Our Newsletter</h2><p>Get the latest updates and offers.</p><form id="newsletter-form"><label class="sr-only" for="newsletter-email">Your email address</label><input id="newsletter-email" type="email" placeholder="Enter your email address" required><button type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button></form></div>
+      </div>
+      <div class="footer-bottom"><div class="container footer-bottom-inner"><span>© 2025 VTU9JA. All rights reserved.</span><div><span><i class="bi bi-shield-check"></i> Secure Payments</span><span>24/7 Support</span><span>Fast Delivery</span></div></div></div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#073d31">
+    <meta name="description" content="View your VTU9JA account profile and contact information.">
+    <title>My Profile — VTU9JA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./dist/styles.css">
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="./profile.css">
+  </head>
+  <body class="dashboard-page profile-page">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-contact">
+          <a href="tel:+2348171234567"><i class="bi bi-telephone-fill"></i> +234 817 123 4567</a>
+          <a href="mailto:support@vtu9ja.ng"><i class="bi bi-envelope"></i> support@vtu9ja.ng</a>
+        </div>
+        <div class="topbar-account">
+          <a href="./login.html"><i class="bi bi-person-fill"></i> Login</a>
+          <a href="./register.html"><i class="bi bi-person-plus-fill"></i> Register</a>
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html#home" aria-label="VTU9JA home">
+          <span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
+          <span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i class="bi bi-list"></i></button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="./index.html#home">Home</a>
+          <a href="./buy-airtime.html">Airtime</a>
+          <a href="./buy-data.html">Data</a>
+          <a href="./pay-bills.html?type=tv">TV</a>
+          <a href="./pay-bills.html?type=electricity">Electricity</a>
+          <a href="./exam-pins.html">Exam Pins</a>
+          <a href="./more-services.html">More Services</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <a class="button button-nav" href="./dashboard.html"><i class="bi bi-grid-1x2-fill"></i> My Dashboard</a>
+      </div>
+    </header>
+
+    <div class="dashboard-app">
+      <aside class="dashboard-sidebar" id="dashboard-sidebar" aria-label="Dashboard navigation">
+        <a class="dashboard-brand" href="./index.html" aria-label="VTU9JA home">
+          <span class="dashboard-brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
+          <span class="dashboard-brand-copy"><strong>VTU9<span>JA</span></strong><small>USER DASHBOARD</small></span>
+        </a>
+        <div class="sidebar-caption">MENU</div>
+        <nav class="dashboard-nav" aria-label="Account menu">
+          <a class="dashboard-nav-link" href="./dashboard.html"><i class="bi bi-grid-1x2-fill"></i><span>Overview</span></a>
+          <a class="dashboard-nav-link" href="./buy-airtime.html"><i class="bi bi-phone"></i><span>Buy Airtime</span></a>
+          <a class="dashboard-nav-link" href="./buy-data.html"><i class="bi bi-wifi"></i><span>Buy Data</span></a>
+          <a class="dashboard-nav-link" href="./pay-bills.html"><i class="bi bi-lightning-charge"></i><span>Pay Bills</span></a>
+          <a class="dashboard-nav-link" href="./exam-pins.html"><i class="bi bi-mortarboard"></i><span>Exam Pins</span></a>
+          <a class="dashboard-nav-link" href="./more-services.html"><i class="bi bi-three-dots"></i><span>More Services</span></a>
+          <a class="dashboard-nav-link" href="./transactions.html"><i class="bi bi-clock-history"></i><span>Transactions</span></a>
+        </nav>
+        <div class="sidebar-caption sidebar-caption-account">ACCOUNT</div>
+        <nav class="dashboard-nav" aria-label="Account support">
+          <a class="dashboard-nav-link active" href="./profile.html" aria-current="page"><i class="bi bi-person"></i><span>My Profile</span></a>
+          <a class="dashboard-nav-link" href="./contact.html"><i class="bi bi-headset"></i><span>Help &amp; Support</span></a>
+          <a class="dashboard-nav-link" href="./login.html"><i class="bi bi-box-arrow-left"></i><span>Sign out</span></a>
+        </nav>
+        <div class="sidebar-help">
+          <span class="sidebar-help-icon"><i class="bi bi-headset"></i></span>
+          <strong>Need a hand?</strong>
+          <p>Our support team is ready to help, any time.</p>
+          <a href="./contact.html">Contact support <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <a class="sidebar-home" href="./index.html"><i class="bi bi-arrow-left"></i> Back to VTU9JA</a>
+      </aside>
+      <div class="sidebar-scrim" hidden></div>
+
+      <div class="dashboard-main">
+        <header class="dashboard-topbar">
+          <button class="dashboard-menu-toggle" type="button" aria-label="Open dashboard menu" aria-expanded="false" aria-controls="dashboard-sidebar">
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="topbar-page-title"><span>Workspace</span><i class="bi bi-chevron-right"></i><strong>My Profile</strong></div>
+          <div class="topbar-actions">
+            <span class="demo-tag"><i class="bi bi-stars"></i> Demo account</span>
+            <a class="profile-chip" href="./profile.html" aria-current="page">
+              <span class="avatar">CO</span>
+              <span class="profile-chip-copy"><strong>Chioma Okafor</strong><small>Personal account</small></span>
+              <i class="bi bi-chevron-down profile-chevron"></i>
+            </a>
+          </div>
+        </header>
+
+        <main class="dashboard-content profile-content">
+          <section class="welcome-row profile-welcome">
+            <div>
+              <span class="welcome-date"><i class="bi bi-person-vcard"></i> ACCOUNT SETTINGS</span>
+              <h1>My profile</h1>
+              <p>View your personal details and account information.</p>
+            </div>
+            <a class="outline-button profile-support-button" href="./contact.html"><i class="bi bi-headset"></i> Get profile help</a>
+          </section>
+
+          <section class="profile-hero" aria-labelledby="profile-name">
+            <div class="profile-hero-identity">
+              <span class="profile-large-avatar" aria-hidden="true">CO</span>
+              <div>
+                <span class="profile-eyebrow">PERSONAL ACCOUNT</span>
+                <h2 id="profile-name">Chioma Okafor</h2>
+                <p>chioma@example.com</p>
+              </div>
+            </div>
+            <span class="profile-status"><i class="bi bi-check-circle-fill"></i> Active account</span>
+          </section>
+
+          <div class="profile-layout">
+            <section class="dashboard-section profile-details-card" aria-labelledby="personal-details-title">
+              <div class="profile-section-heading">
+                <span class="profile-section-icon"><i class="bi bi-person-lines-fill"></i></span>
+                <div>
+                  <span class="section-kicker">YOUR DETAILS</span>
+                  <h2 id="personal-details-title">Personal information</h2>
+                </div>
+              </div>
+              <div class="profile-detail-list">
+                <div class="profile-info-row">
+                  <span class="profile-info-icon"><i class="bi bi-person"></i></span>
+                  <span class="profile-info-copy"><small>Full name</small><strong>Chioma Okafor</strong></span>
+                  <span class="profile-info-state">On file</span>
+                </div>
+                <div class="profile-info-row">
+                  <span class="profile-info-icon"><i class="bi bi-envelope"></i></span>
+                  <span class="profile-info-copy"><small>Email address</small><strong>chioma@example.com</strong></span>
+                  <span class="profile-info-state">On file</span>
+                </div>
+                <div class="profile-info-row">
+                  <span class="profile-info-icon"><i class="bi bi-telephone"></i></span>
+                  <span class="profile-info-copy"><small>Phone number</small><strong>0803 ••• ••24</strong></span>
+                  <span class="profile-info-state">On file</span>
+                </div>
+              </div>
+              <p class="profile-info-note"><i class="bi bi-info-circle"></i> This demo profile uses sample information. Profile editing is not connected yet.</p>
+            </section>
+
+            <aside class="profile-aside">
+              <section class="dashboard-section profile-security-card" aria-labelledby="security-title">
+                <div class="profile-section-heading">
+                  <span class="profile-section-icon profile-security-icon"><i class="bi bi-shield-lock"></i></span>
+                  <div>
+                    <span class="section-kicker">ACCOUNT SAFETY</span>
+                    <h2 id="security-title">Security</h2>
+                  </div>
+                </div>
+                <div class="security-status">
+                  <span class="security-status-icon"><i class="bi bi-shield-check"></i></span>
+                  <span><strong>Your account is protected</strong><small>Keep your sign-in details private.</small></span>
+                </div>
+                <a class="profile-help-link" href="./contact.html">Need to update account access? <i class="bi bi-arrow-up-right"></i></a>
+              </section>
+
+              <section class="profile-help-card">
+                <span class="profile-help-card-icon"><i class="bi bi-headset"></i></span>
+                <div>
+                  <span class="section-kicker">WE’RE HERE TO HELP</span>
+                  <h2>Need to change your details?</h2>
+                  <p>Contact our support team for help with your profile or account access.</p>
+                  <a href="./contact.html">Contact support <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </section>
+            </aside>
+          </div>
+          <p class="profile-disclaimer"><i class="bi bi-stars"></i> Demo account — details on this page are sample data and are not connected to a live account.</p>
+        </main>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-about">
+          <a class="brand brand-light" href="./index.html#home"><span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span><span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span></a>
+          <p>Your one-stop VTU platform for airtime, data, TV subscription, electricity bills and more. Stay connected. Always.</p>
+          <div class="social-links"><a href="./contact.html" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="./contact.html" aria-label="X"><i class="bi bi-twitter-x"></i></a><a href="./contact.html" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="./contact.html" aria-label="YouTube"><i class="bi bi-youtube"></i></a></div>
+        </div>
+        <div class="footer-column"><h2>Quick Links</h2><div class="footer-link-grid"><a href="./index.html#home">Home</a><a href="./exam-pins.html">Exam Pins</a><a href="./buy-airtime.html">Airtime</a><a href="./more-services.html">More Services</a><a href="./buy-data.html">Data</a><a href="./about.html">About Us</a><a href="./pay-bills.html?type=tv">TV Subscription</a><a href="./contact.html">Contact</a><a href="./pay-bills.html?type=electricity">Electricity Bills</a></div></div>
+        <div class="footer-column"><h2>Help &amp; Support</h2><a href="./contact.html">FAQs</a><a href="./contact.html">Terms &amp; Conditions</a><a href="./contact.html">Privacy Policy</a><a href="./contact.html">Refund Policy</a><a href="./index.html#get-started">How It Works</a></div>
+        <div class="footer-newsletter"><h2>Subscribe to Our Newsletter</h2><p>Get the latest updates and offers.</p><form id="newsletter-form"><label class="sr-only" for="newsletter-email">Your email address</label><input id="newsletter-email" type="email" placeholder="Enter your email address" required><button type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button></form></div>
+      </div>
+      <div class="footer-bottom"><div class="container footer-bottom-inner"><span>© 2025 VTU9JA. All rights reserved.</span><div><span><i class="bi bi-shield-check"></i> Secure Payments</span><span>24/7 Support</span><span>Fast Delivery</span></div></div></div>
+    </footer>
+    <div class="profile-toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./profile.js"></script>
+  </body>
+</html>

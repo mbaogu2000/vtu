@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#073d31">
+    <meta name="description" content="Explore airtime conversion, gift cards and internet services with VTU9JA.">
+    <title>More Services — VTU9JA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./dist/styles.css">
+    <link rel="stylesheet" href="./buy-airtime.css">
+    <link rel="stylesheet" href="./more-services.css">
+  </head>
+  <body class="airtime-page more-services-page">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-contact">
+          <a href="tel:+2348171234567"><i class="bi bi-telephone-fill"></i> +234 817 123 4567</a>
+          <a href="mailto:support@vtu9ja.ng"><i class="bi bi-envelope"></i> support@vtu9ja.ng</a>
+        </div>
+        <div class="topbar-account">
+          <a href="./login.html"><i class="bi bi-person-fill"></i> Login</a>
+          <a href="./register.html"><i class="bi bi-person-plus-fill"></i> Register</a>
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html#home" aria-label="VTU9JA home">
+          <span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
+          <span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i class="bi bi-list"></i></button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="./index.html#home">Home</a>
+          <a href="./buy-airtime.html">Airtime</a>
+          <a href="./buy-data.html">Data</a>
+          <a href="./pay-bills.html?type=tv">TV</a>
+          <a href="./pay-bills.html?type=electricity">Electricity</a>
+          <a href="./exam-pins.html">Exam Pins</a>
+          <a class="active" href="./more-services.html" aria-current="page">More Services</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <a class="button button-nav" href="./dashboard.html"><i class="bi bi-grid-1x2-fill"></i> My Dashboard</a>
+      </div>
+    </header>
+
+    <main class="airtime-main">
+      <div class="container airtime-container">
+        <nav class="airtime-breadcrumb" aria-label="Breadcrumb">
+          <a href="./index.html">Home</a><i class="bi bi-chevron-right" aria-hidden="true"></i><span aria-current="page">More Services</span>
+        </nav>
+
+        <section class="more-services-intro" aria-labelledby="more-services-title">
+          <span class="more-services-eyebrow"><i class="bi bi-stars"></i> MORE WAYS TO GET THINGS DONE</span>
+          <h1 id="more-services-title">More services, <span>one easy place.</span></h1>
+          <p>Explore additional VTU9JA services. Select an option to preview the details.</p>
+        </section>
+
+        <section class="more-services-grid" aria-label="Additional services">
+          <article class="more-service-card more-service-cash">
+            <span class="more-service-icon"><i class="bi bi-arrow-left-right"></i></span>
+            <span class="more-service-tag">AIRTIME CONVERSION</span>
+            <h2>Airtime to Cash</h2>
+            <p>Explore converting eligible airtime into wallet value.</p>
+            <ul><li><i class="bi bi-check2"></i> Multiple networks</li><li><i class="bi bi-check2"></i> Review before proceeding</li></ul>
+            <button class="more-service-action" type="button" data-service="airtime-cash">Preview options <i class="bi bi-arrow-right"></i></button>
+          </article>
+
+          <article class="more-service-card more-service-gift">
+            <span class="more-service-icon"><i class="bi bi-gift-fill"></i></span>
+            <span class="more-service-tag">DIGITAL GIFTING</span>
+            <h2>Gift Cards</h2>
+            <p>Browse digital gift card options for popular stores and platforms.</p>
+            <ul><li><i class="bi bi-check2"></i> Choose a gift card brand</li><li><i class="bi bi-check2"></i> Select a denomination</li></ul>
+            <button class="more-service-action" type="button" data-service="gift-card">Preview options <i class="bi bi-arrow-right"></i></button>
+          </article>
+
+          <article class="more-service-card more-service-internet">
+            <span class="more-service-icon"><i class="bi bi-router-fill"></i></span>
+            <span class="more-service-tag">BROADBAND</span>
+            <h2>Internet Services</h2>
+            <p>Explore home and mobile broadband bundle options.</p>
+            <ul><li><i class="bi bi-check2"></i> Select a provider</li><li><i class="bi bi-check2"></i> Compare sample plans</li></ul>
+            <button class="more-service-action" type="button" data-service="internet">Preview options <i class="bi bi-arrow-right"></i></button>
+          </article>
+        </section>
+
+        <aside class="more-services-notice">
+          <span><i class="bi bi-info-circle"></i></span>
+          <p><strong>Demo service catalogue</strong><br>These options are for demonstration only. No payments, airtime conversion, gift cards, or internet subscriptions are processed.</p>
+          <a href="./contact.html">Need help? <i class="bi bi-arrow-right"></i></a>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container more-services-footer">
+        <a class="brand brand-light" href="./index.html#home"><span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span><span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span></a>
+        <p>Need help? <a href="./contact.html">Contact our support team</a>.</p>
+        <span>© 2025 VTU9JA. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <dialog class="service-preview-dialog" aria-labelledby="service-dialog-title">
+      <form method="dialog" class="service-dialog-close-form"><button class="service-dialog-close" aria-label="Close dialog"><i class="bi bi-x-lg"></i></button></form>
+      <span class="service-dialog-icon"><i class="bi bi-stars"></i></span>
+      <span class="airtime-kicker">DEMO SERVICE</span>
+      <h2 id="service-dialog-title">Service options</h2>
+      <p class="service-dialog-description"></p>
+      <form id="service-preview-form" class="service-preview-form">
+        <label class="preview-field" id="network-option-field" hidden><span>Network</span><select name="network"><option value="MTN">MTN</option><option value="Airtel">Airtel</option><option value="Glo">Glo</option><option value="9mobile">9mobile</option></select></label>
+        <label class="preview-field" id="brand-option-field" hidden><span>Gift card brand</span><select name="brand"><option value="Amazon">Amazon</option><option value="Apple">Apple</option><option value="Google Play">Google Play</option><option value="Steam">Steam</option></select></label>
+        <label class="preview-field" id="provider-option-field" hidden><span>Internet provider</span><select name="provider"><option value="Spectranet">Spectranet</option><option value="Smile">Smile</option><option value="MTN Broadband">MTN Broadband</option></select></label>
+        <label class="preview-field" id="product-option-field" hidden><span id="product-option-label">Option</span><select name="product"></select></label>
+        <label class="preview-field" id="airtime-amount-field" hidden><span>Airtime amount (₦)</span><input name="amount" type="number" min="100" step="50" placeholder="Enter amount"></label>
+        <label class="preview-field"><span id="recipient-label">Phone number</span><input name="recipient" type="text" autocomplete="off" placeholder="Enter phone number" required></label>
+        <button class="service-preview-submit" type="submit">Review demo option <i class="bi bi-arrow-right"></i></button>
+      </form>
+      <p class="service-preview-notice" role="status" aria-live="polite"></p>
+      <p class="service-preview-disclaimer"><i class="bi bi-info-circle"></i> Demo only. Never enter gift card redemption codes or PINs here.</p>
+    </dialog>
+    <div class="airtime-toast" id="services-toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./more-services.js"></script>
+  </body>
+</html>

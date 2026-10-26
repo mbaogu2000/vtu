@@ -1,0 +1,100 @@
+.exam-heading-icon {
+  color: #cf6257;
+  background: #fff0ee;
+}
+
+.exam-type-fieldset {
+  margin-bottom: 18px;
+}
+
+.exam-options {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.exam-option {
+  min-height: 68px;
+  padding-left: 42px;
+}
+
+.exam-option > input {
+  left: 13px;
+}
+
+.exam-icon {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  font: 800 15px/1 Manrope, sans-serif;
+}
+
+.exam-icon-waec {
+  color: #3875bd;
+  background: #edf4fc;
+}
+
+.exam-icon-neco {
+  color: #078849;
+  background: #eaf7ee;
+}
+
+.exam-icon-jamb {
+  color: #885ac2;
+  background: #f4eefb;
+}
+
+.exam-icon-nabteb {
+  color: #bf8b20;
+  background: #fff7e6;
+}
+
+.exam-option .data-plan-details strong {
+  font-size: 10px;
+}
+
+.exam-option .data-plan-price {
+  margin-left: auto;
+}
+
+.exam-fields {
+  display: grid;
+  grid-template-columns: minmax(130px, 0.56fr) minmax(0, 1.44fr);
+  align-items: start;
+  gap: 13px;
+}
+
+.exam-quantity-field {
+  margin-top: 20px;
+}
+
+.exam-select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0 12px;
+  color: #183342;
+  background: #fff;
+  border: 1px solid #dfe8e2;
+  border-radius: 8px;
+  outline: none;
+  font: inherit;
+  font-size: 12px;
+}
+
+.exam-select:focus {
+  border-color: #078849;
+  box-shadow: 0 0 0 3px #07884916;
+}
+
+.exam-summary-icon {
+  color: #cf6257;
+  background: #fff0ee;
+}
+
+@media (max-width: 560px) {
+  .exam-fields {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+}

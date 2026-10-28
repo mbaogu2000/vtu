@@ -1,137 +1,187 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#063e32">
-    <meta name="description" content="Create your VTU9JA account to top up, buy data and pay bills.">
-    <title>Create Account — VTU9JA</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./dist/styles.css">
-    <link rel="stylesheet" href="./auth.css">
-  </head>
-  <body>
-    <div class="topbar">
-      <div class="container topbar-inner">
-        <div class="topbar-contact">
-          <a href="tel:+2348171234567"><i class="bi bi-telephone-fill"></i> +234 817 123 4567</a>
-          <a href="mailto:support@vtu9ja.ng"><i class="bi bi-envelope"></i> support@vtu9ja.ng</a>
-        </div>
-        <div class="topbar-account">
-          <a href="./login.html"><i class="bi bi-person-fill"></i> Login</a>
-          <a href="./register.html" aria-current="page"><i class="bi bi-person-plus-fill"></i> Register</a>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#063e32">
+  <meta name="description" content="Create your VTU9JA account to top up, buy data and pay bills.">
+  <title>Create Account — VTU9JA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="min-h-screen min-w-[320px] bg-[#f7f9f8] font-['DM_Sans',sans-serif] text-[#102c3d]">
+  <div class="bg-gradient-to-r from-[#004d39] to-[#07853e] text-[11px] text-white">
+    <div class="mx-auto flex h-[34px] w-[min(1120px,calc(100%-48px))] items-center justify-between max-md:w-[calc(100%-36px)]">
+      <div class="flex items-center gap-5">
+        <a class="inline-flex items-center gap-2" href="tel:+2347033936505"><i class="bi bi-telephone-fill"></i> +234 7033936505</a>
+        <a class="inline-flex items-center gap-2 max-sm:hidden" href="mailto:support@vtu9ja.ng"><i class="bi bi-envelope"></i> support@vtu9ja.ng</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a class="inline-flex items-center gap-2" href="./login.html"><i class="bi bi-person-fill"></i> Login</a>
+        <a class="inline-flex items-center gap-2" href="./register.html" aria-current="page"><i class="bi bi-person-plus-fill"></i> Register</a>
       </div>
     </div>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="./index.html#home" aria-label="VTU9JA home">
-          <span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
-          <span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span>
-        </a>
-        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i class="bi bi-list"></i></button>
-        <nav class="main-nav" aria-label="Main navigation">
-          <a href="./index.html#home">Home</a>
-          <a href="./buy-airtime.html">Airtime</a>
-          <a href="./buy-data.html">Data</a>
-          <a href="./pay-bills.html?type=tv">TV</a>
-          <a href="./pay-bills.html?type=electricity">Electricity</a>
-          <a href="./exam-pins.html">Exam Pins</a>
-          <a href="./more-services.html">More Services</a>
-          <a href="./about.html">About</a>
-          <a href="./contact.html">Contact</a>
-        </nav>
-        <a class="button button-nav" href="./login.html"><i class="bi bi-person-fill"></i> Sign In</a>
+  </div>
+
+  <header class="sticky top-0 z-20 h-16 bg-white shadow-sm">
+    <div class="mx-auto flex h-full w-[min(1120px,calc(100%-48px))] items-center justify-between gap-5 max-md:w-[calc(100%-36px)]">
+      <a class="inline-flex shrink-0 items-center gap-2" href="./index.html#home" aria-label="VTU9JA home">
+        <span class="grid h-10 w-10 place-items-center bg-[#078b4d] text-2xl text-white [clip-path:polygon(25%_0,100%_0,77%_100%,0_100%)]"><i class="bi bi-lightning-charge-fill"></i></span>
+        <span class="flex flex-col leading-none">
+          <span class="font-['Manrope',sans-serif] text-[27px] font-extrabold tracking-[-1.6px] text-[#0a2636]">VTU9<span class="text-[#078849]">JA</span></span>
+          <span class="mt-1 text-[10px] tracking-wide text-[#365768]">Fast · Secure · Reliable</span>
+        </span>
+      </a>
+      <button class="ml-auto hidden text-3xl text-[#007a45] max-md:block" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i class="bi bi-list"></i></button>
+      <nav id="main-nav" class="flex items-center gap-5 whitespace-nowrap text-xs font-semibold max-md:absolute max-md:left-0 max-md:right-0 max-md:top-16 max-md:hidden max-md:flex-col max-md:items-stretch max-md:bg-white max-md:px-6 max-md:py-4 max-md:shadow-lg">
+        <a class="py-2 hover:text-[#007b43]" href="./index.html#home">Home</a>
+        <a class="py-2 hover:text-[#007b43]" href="./buy-airtime.html">Airtime</a>
+        <a class="py-2 hover:text-[#007b43]" href="./buy-data.html">Data</a>
+        <a class="py-2 hover:text-[#007b43]" href="./pay-bills.html?type=tv">TV</a>
+        <a class="py-2 hover:text-[#007b43]" href="./pay-bills.html?type=electricity">Electricity</a>
+        <a class="py-2 hover:text-[#007b43]" href="./exam-pins.html">Exam Pins</a>
+        <a class="py-2 hover:text-[#007b43]" href="./more-services.html">More Services</a>
+        <a class="py-2 hover:text-[#007b43]" href="./about.html">About</a>
+        <a class="py-2 hover:text-[#007b43]" href="./contact.html">Contact</a>
+      </nav>
+      <a class="inline-flex min-h-9 min-w-32 items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#00834b] to-[#00703e] px-4 text-xs font-bold text-white hover:shadow-lg max-md:hidden" href="./login.html"><i class="bi bi-person-fill"></i> Sign In</a>
+    </div>
+  </header>
+
+  <main class="mx-auto grid min-h-[calc(100vh-260px)] w-[min(1120px,calc(100%-48px))] grid-cols-[1.04fr_.96fr] items-center gap-[clamp(36px,7vw,96px)] py-8 max-md:block max-md:w-[min(480px,calc(100%-40px))] max-md:py-8 max-md:pb-12">
+    <aside class="relative flex min-h-[600px] flex-col justify-between overflow-hidden rounded-[25px] bg-[radial-gradient(ellipse_at_82%_7%,#1d965b_0%,transparent_35%),linear-gradient(145deg,#063e32,#002a29_78%)] p-[clamp(34px,5vw,64px)] text-white shadow-[0_22px_70px_#063d321c] max-md:hidden">
+      <div class="pointer-events-none absolute -bottom-36 -right-48 h-[420px] w-[420px] rounded-full border border-white/10"></div>
+      <div class="pointer-events-none absolute -bottom-24 -right-32 h-[300px] w-[300px] rounded-full border border-white/10"></div>
+      <a class="relative z-10 inline-flex items-center gap-2" href="./index.html" aria-label="VTU9JA home">
+        <span class="grid h-11 w-11 place-items-center bg-[#078b4d] text-[28px] text-white [clip-path:polygon(25%_0,100%_0,77%_100%,0_100%)]"><i class="bi bi-lightning-charge-fill"></i></span>
+        <span class="flex flex-col leading-none">
+          <span class="font-['Manrope',sans-serif] text-[29px] font-extrabold tracking-[-1.6px] text-white">VTU9<span class="text-[#27df77]">JA</span></span>
+          <span class="mt-1 text-[10px] tracking-wide text-[#c1d9cd]">Fast · Secure · Reliable</span>
+        </span>
+      </a>
+      <div class="relative z-10 my-12 max-w-[430px]">
+        <span class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-3 py-2 text-xs font-semibold text-[#d7f9e5]"><i class="bi bi-stars text-[#35e47e]"></i> Join VTU9JA today</span>
+        <h1 class="mb-4 font-['Manrope',sans-serif] text-[clamp(34px,4.1vw,49px)] font-extrabold leading-[1.12] tracking-[-1.7px]">Stay connected,<br><span class="text-[#32e17b]">the easy way.</span></h1>
+        <p class="max-w-[365px] text-[15px] leading-7 text-[#c8ded4]">Create an account and get a simpler way to top up, pay bills and stay connected every day.</p>
       </div>
-    </header>
-    <main class="auth-shell">
-      <aside class="auth-promo">
-        <a class="auth-brand" href="./index.html" aria-label="VTU9JA home">
-          <span class="auth-brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
-          <span class="auth-brand-copy"><span class="auth-brand-name">VTU9<span>JA</span></span><span class="auth-brand-tagline">Fast · Secure · Reliable</span></span>
-        </a>
-        <div class="promo-content">
-          <span class="promo-kicker"><i class="bi bi-stars"></i> Join VTU9JA today</span>
-          <h1>Stay connected,<br><span>the easy way.</span></h1>
-          <p>Create an account and get a simpler way to top up, pay bills and stay connected every day.</p>
-        </div>
-        <div class="promo-points">
-          <span><i class="bi bi-check-circle-fill"></i> Quick and easy account setup</span>
-          <span><i class="bi bi-shield-check"></i> Your details stay protected</span>
-          <span><i class="bi bi-lightning-charge-fill"></i> Services delivered in seconds</span>
-        </div>
-      </aside>
+      <div class="relative z-10 grid gap-3 text-[13px] text-[#e0f1e9]">
+        <span class="flex items-center gap-3"><i class="bi bi-check-circle-fill text-base text-[#35e47e]"></i> Quick and easy account setup</span>
+        <span class="flex items-center gap-3"><i class="bi bi-shield-check text-base text-[#35e47e]"></i> Your details stay protected</span>
+        <span class="flex items-center gap-3"><i class="bi bi-lightning-charge-fill text-base text-[#35e47e]"></i> Services delivered in seconds</span>
+      </div>
+    </aside>
 
-      <section class="auth-panel" aria-labelledby="auth-title">
-        <a class="auth-brand mobile-brand" href="./index.html" aria-label="VTU9JA home">
-          <span class="auth-brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
-          <span class="auth-brand-copy"><span class="auth-brand-name">VTU9<span>JA</span></span><span class="auth-brand-tagline">Fast · Secure · Reliable</span></span>
-        </a>
-        <h1 class="auth-heading" id="auth-title">Create your account</h1>
-        <p class="auth-subheading">Already have an account? <a href="./login.html">Sign in</a>.</p>
+    <section class="mx-auto w-full max-w-[440px] py-[18px] max-md:max-w-none max-md:py-0" aria-labelledby="auth-title">
+      <a class="mb-10 hidden items-center gap-2 max-md:mb-10 max-md:inline-flex" href="./index.html" aria-label="VTU9JA home">
+        <span class="grid h-11 w-11 place-items-center bg-[#078b4d] text-[28px] text-white [clip-path:polygon(25%_0,100%_0,77%_100%,0_100%)]"><i class="bi bi-lightning-charge-fill"></i></span>
+        <span class="flex flex-col leading-none">
+          <span class="font-['Manrope',sans-serif] text-[29px] font-extrabold tracking-[-1.6px] text-[#0a2636]">VTU9<span class="text-[#078849]">JA</span></span>
+          <span class="mt-1 text-[10px] tracking-wide text-[#537063]">Fast · Secure · Reliable</span>
+        </span>
+      </a>
+      <h1 id="auth-title" class="mb-2 font-['Manrope',sans-serif] text-[32px] font-extrabold leading-tight tracking-[-1px] text-[#102c3d] max-sm:text-[30px]">Create your account</h1>
+      <p class="mb-7 text-sm leading-relaxed text-[#6b7c83]">Already have an account? <a class="font-bold text-[#078849]" href="./login.html">Sign in</a>.</p>
 
-        <form class="auth-form">
-          <div class="field">
-            <label for="register-name">Full name</label>
-            <div class="field-control">
-              <i class="bi bi-person" aria-hidden="true"></i>
-              <input id="register-name" name="name" type="text" autocomplete="name" placeholder="Enter your full name" required>
-            </div>
+      <form class="grid gap-[17px]" id="register-form">
+        <div class="grid gap-2">
+          <label class="text-xs font-bold text-[#263e4a]" for="register-name">Full name</label>
+          <div class="relative">
+            <i class="bi bi-person pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-base text-[#83958d]" aria-hidden="true"></i>
+            <input class="h-[49px] w-full rounded-[9px] border border-[#dce6df] bg-white pl-[43px] pr-4 text-[13px] text-[#183342] outline-none transition focus:border-[#078849] focus:ring-[3px] focus:ring-[#078849]/10 placeholder:text-[#9aa9a2]" id="register-name" name="name" type="text" autocomplete="name" placeholder="Enter your full name" required>
           </div>
-          <div class="field">
-            <label for="register-phone">Phone number</label>
-            <div class="field-control">
-              <i class="bi bi-telephone" aria-hidden="true"></i>
-              <input id="register-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 08012345678" minlength="10" maxlength="14" required>
-            </div>
+        </div>
+        <div class="grid gap-2">
+          <label class="text-xs font-bold text-[#263e4a]" for="register-phone">Phone number</label>
+          <div class="relative">
+            <i class="bi bi-telephone pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-base text-[#83958d]" aria-hidden="true"></i>
+            <input class="h-[49px] w-full rounded-[9px] border border-[#dce6df] bg-white pl-[43px] pr-4 text-[13px] text-[#183342] outline-none transition focus:border-[#078849] focus:ring-[3px] focus:ring-[#078849]/10 placeholder:text-[#9aa9a2]" id="register-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 08012345678" minlength="10" maxlength="14" required>
           </div>
-          <div class="field">
-            <label for="register-email">Email address</label>
-            <div class="field-control">
-              <i class="bi bi-envelope" aria-hidden="true"></i>
-              <input id="register-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
-            </div>
+        </div>
+        <div class="grid gap-2">
+          <label class="text-xs font-bold text-[#263e4a]" for="register-email">Email address</label>
+          <div class="relative">
+            <i class="bi bi-envelope pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-base text-[#83958d]" aria-hidden="true"></i>
+            <input class="h-[49px] w-full rounded-[9px] border border-[#dce6df] bg-white pl-[43px] pr-4 text-[13px] text-[#183342] outline-none transition focus:border-[#078849] focus:ring-[3px] focus:ring-[#078849]/10 placeholder:text-[#9aa9a2]" id="register-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
           </div>
-          <div class="field">
-            <label for="register-password">Password</label>
-            <div class="field-control">
-              <i class="bi bi-lock" aria-hidden="true"></i>
-              <input id="register-password" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required>
-              <button class="password-toggle" type="button" aria-label="Show password" aria-controls="register-password"><i class="bi bi-eye" aria-hidden="true"></i></button>
-            </div>
+        </div>
+        <div class="grid gap-2">
+          <label class="text-xs font-bold text-[#263e4a]" for="register-password">Password</label>
+          <div class="relative">
+            <i class="bi bi-lock pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-base text-[#83958d]" aria-hidden="true"></i>
+            <input class="h-[49px] w-full rounded-[9px] border border-[#dce6df] bg-white pl-[43px] pr-12 text-[13px] text-[#183342] outline-none transition focus:border-[#078849] focus:ring-[3px] focus:ring-[#078849]/10 placeholder:text-[#9aa9a2]" id="register-password" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required>
+            <button class="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer p-1.5 text-[#75867f] hover:text-[#078849]" type="button" aria-label="Show password" aria-controls="register-password"><i class="bi bi-eye" aria-hidden="true"></i></button>
           </div>
-          <div class="field">
-            <label for="register-confirm-password">Confirm password</label>
-            <div class="field-control">
-              <i class="bi bi-lock" aria-hidden="true"></i>
-              <input id="register-confirm-password" name="confirm-password" type="password" autocomplete="new-password" placeholder="Enter your password again" required>
-              <button class="password-toggle" type="button" aria-label="Show password" aria-controls="register-confirm-password"><i class="bi bi-eye" aria-hidden="true"></i></button>
-            </div>
+        </div>
+        <div class="grid gap-2">
+          <label class="text-xs font-bold text-[#263e4a]" for="register-confirm-password">Confirm password</label>
+          <div class="relative">
+            <i class="bi bi-lock pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-base text-[#83958d]" aria-hidden="true"></i>
+            <input class="h-[49px] w-full rounded-[9px] border border-[#dce6df] bg-white pl-[43px] pr-12 text-[13px] text-[#183342] outline-none transition focus:border-[#078849] focus:ring-[3px] focus:ring-[#078849]/10 placeholder:text-[#9aa9a2]" id="register-confirm-password" name="confirm-password" type="password" autocomplete="new-password" placeholder="Enter your password again" required>
+            <button class="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer p-1.5 text-[#75867f] hover:text-[#078849]" type="button" aria-label="Show password" aria-controls="register-confirm-password"><i class="bi bi-eye" aria-hidden="true"></i></button>
           </div>
-          <label class="check-option"><input type="checkbox" name="terms" required> <span>I agree to the <a href="./index.html#footer">Terms &amp; Conditions</a> and <a href="./index.html#footer">Privacy Policy</a>.</span></label>
-          <button class="auth-submit" type="submit">Create Account <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
-          <p class="auth-notice" role="status" aria-live="polite"></p>
+        </div>
+        <label class="inline-flex items-start gap-2 text-xs leading-relaxed text-[#52676f]">
+          <input class="mt-0.5 h-[15px] w-[15px] shrink-0 accent-[#078849]" type="checkbox" name="terms" required>
+          <span>I agree to the <a class="font-bold text-[#078849]" href="./index.html#footer">Terms &amp; Conditions</a> and <a class="font-bold text-[#078849]" href="./index.html#footer">Privacy Policy</a>.</span>
+        </label>
+        <button class="mt-1 inline-flex min-h-[49px] items-center justify-center gap-2 rounded-[9px] bg-gradient-to-r from-[#078849] to-[#006d3c] text-sm font-bold text-white transition hover:-translate-y-px hover:shadow-[0_9px_22px_#007a452e] focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-[#12a96066]" type="submit">Create Account <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+        <p class="empty:hidden text-xs leading-relaxed text-[#536c60]" id="auth-notice" role="status" aria-live="polite"></p>
+      </form>
+      <a class="mt-6 block text-center text-xs text-[#7b8b84] hover:text-[#078849]" href="./index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i> Back to homepage</a>
+    </section>
+  </main>
+
+  <footer class="bg-gradient-to-br from-[#052d2c] to-[#00332e] text-[#e5f4f0]" id="footer">
+    <div class="mx-auto grid w-[min(1120px,calc(100%-48px))] grid-cols-[1.3fr_1fr_.9fr_1.35fr] gap-10 py-6 max-md:w-[calc(100%-36px)] max-md:grid-cols-2 max-md:gap-x-5 max-md:gap-y-6">
+      <div class="max-md:col-span-2">
+        <a class="inline-flex items-center gap-2" href="./index.html#home">
+          <span class="grid h-[38px] w-[37px] place-items-center bg-[#078b4d] text-[26px] text-white [clip-path:polygon(25%_0,100%_0,77%_100%,0_100%)]"><i class="bi bi-lightning-charge-fill"></i></span>
+          <span class="flex flex-col leading-none"><span class="font-['Manrope',sans-serif] text-[26px] font-extrabold tracking-[-1.6px] text-white">VTU9<span class="text-[#078849]">JA</span></span><span class="mt-1 text-[10px] text-[#c5e0d8]">Fast · Secure · Reliable</span></span>
+        </a>
+        <p class="my-2 max-w-[220px] text-[10px] leading-relaxed text-[#d0e3df]">Your one-stop VTU platform for airtime, data, TV subscription, electricity bills and more. Stay connected. Always.</p>
+        <div class="flex gap-2"><a class="grid h-6 w-6 place-items-center rounded-full border border-[#6b9691] text-[11px]" href="#footer" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a class="grid h-6 w-6 place-items-center rounded-full border border-[#6b9691] text-[11px]" href="#footer" aria-label="X"><i class="bi bi-twitter-x"></i></a><a class="grid h-6 w-6 place-items-center rounded-full border border-[#6b9691] text-[11px]" href="#footer" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a class="grid h-6 w-6 place-items-center rounded-full border border-[#6b9691] text-[11px]" href="#footer" aria-label="YouTube"><i class="bi bi-youtube"></i></a></div>
+      </div>
+      <div>
+        <h2 class="mb-2 text-[11px] font-extrabold text-white">Quick Links</h2>
+        <div class="grid grid-cols-2 gap-x-3 text-[9px] text-[#d0e3df] [&_a]:mb-1.5 [&_a:hover]:text-[#53e890]">
+          <a href="./index.html#home">Home</a><a href="./exam-pins.html">Exam Pins</a><a href="./buy-airtime.html">Airtime</a><a href="./more-services.html">More Services</a><a href="./buy-data.html">Data</a><a href="./about.html">About Us</a><a href="./pay-bills.html?type=tv">TV Subscription</a><a href="./contact.html">Contact</a><a href="./pay-bills.html?type=electricity">Electricity Bills</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="mb-2 text-[11px] font-extrabold text-white">Help &amp; Support</h2>
+        <div class="grid gap-1.5 text-[9px] text-[#d0e3df] [&_a:hover]:text-[#53e890]"><a href="#footer">FAQs</a><a href="#footer">Terms &amp; Conditions</a><a href="#footer">Privacy Policy</a><a href="#footer">Refund Policy</a><a href="./index.html#get-started">How It Works</a></div>
+      </div>
+      <div class="max-md:col-span-2">
+        <h2 class="mb-2 text-[11px] font-extrabold text-white">Subscribe to Our Newsletter</h2>
+        <p class="mb-2 text-[10px] text-[#d0e3df]">Get the latest updates and offers.</p>
+        <form id="newsletter-form" class="flex h-8 overflow-hidden rounded-md border border-[#b5d0c7] bg-white">
+          <label class="sr-only" for="newsletter-email">Your email address</label>
+          <input class="min-w-0 flex-1 px-3 text-[10px] text-[#17354a] outline-none" id="newsletter-email" type="email" placeholder="Enter your email address" required>
+          <button class="w-11 shrink-0 cursor-pointer bg-[#06a652] text-white" type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button>
         </form>
-        <a class="auth-home" href="./index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i> Back to homepage</a>
-      </section>
-    </main>
-    <footer class="site-footer" id="footer">
-      <div class="container footer-main">
-        <div class="footer-about">
-          <a class="brand brand-light" href="./index.html#home"><span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span><span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span></a>
-          <p>Your one-stop VTU platform for airtime, data, TV subscription, electricity bills and more. Stay connected. Always.</p>
-          <div class="social-links"><a href="#footer" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#footer" aria-label="X"><i class="bi bi-twitter-x"></i></a><a href="#footer" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#footer" aria-label="YouTube"><i class="bi bi-youtube"></i></a></div>
-        </div>
-        <div class="footer-column"><h2>Quick Links</h2><div class="footer-link-grid"><a href="./index.html#home">Home</a><a href="./exam-pins.html">Exam Pins</a><a href="./buy-airtime.html">Airtime</a><a href="./more-services.html">More Services</a><a href="./buy-data.html">Data</a><a href="./about.html">About Us</a><a href="./pay-bills.html?type=tv">TV Subscription</a><a href="./contact.html">Contact</a><a href="./pay-bills.html?type=electricity">Electricity Bills</a></div></div>
-        <div class="footer-column"><h2>Help &amp; Support</h2><a href="#footer">FAQs</a><a href="#footer">Terms &amp; Conditions</a><a href="#footer">Privacy Policy</a><a href="#footer">Refund Policy</a><a href="./index.html#get-started">How It Works</a></div>
-        <div class="footer-newsletter"><h2>Subscribe to Our Newsletter</h2><p>Get the latest updates and offers.</p><form id="newsletter-form"><label class="sr-only" for="newsletter-email">Your email address</label><input id="newsletter-email" type="email" placeholder="Enter your email address" required><button type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button></form></div>
       </div>
-      <div class="footer-bottom"><div class="container footer-bottom-inner"><span>© 2025 VTU9JA. All rights reserved.</span><div><span><i class="bi bi-shield-check"></i> Secure Payments</span><span>24/7 Support</span><span>Fast Delivery</span></div></div></div>
-    </footer>
-    <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script type="module" src="./auth.js"></script>
-  </body>
+    </div>
+    <div class="border-t border-white/15">
+      <div class="mx-auto flex min-h-9 w-[min(1120px,calc(100%-48px))] items-center justify-between gap-4 text-[9px] text-[#c4d9d6] max-md:w-[calc(100%-36px)] max-md:flex-col max-md:items-start max-md:py-3">
+        <span>© 2025 VTU9JA. All rights reserved.</span>
+        <div class="flex gap-5 max-sm:flex-wrap max-sm:gap-3"><span><i class="bi bi-shield-check mr-1"></i> Secure Payments</span><span>24/7 Support</span><span>Fast Delivery</span></div>
+      </div>
+    </div>
+  </footer>
+  <div class="pointer-events-none fixed bottom-6 right-6 z-50 max-w-[calc(100%-48px)] translate-y-3 rounded-lg bg-[#063c30] px-5 py-3 text-[13px] text-white opacity-0 shadow-xl transition" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+    menuToggle?.addEventListener('click', () => {
+      const open = mainNav.classList.toggle('hidden');
+      menuToggle.setAttribute('aria-expanded', String(!open));
+      menuToggle.setAttribute('aria-label', open ? 'Open navigation' : 'Close navigation');
+    });
+  </script>
+  <script type="module" src="./auth.js"></script>
+</body>
 </html>

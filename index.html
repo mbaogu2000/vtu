@@ -1,191 +1,222 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#006b3c">
-    <meta name="description" content="Top up airtime, buy data, pay bills and do more instantly with VTU9JA.">
-    <title>VTU9JA — Fast, Secure, Reliable</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./dist/styles.css">
-  </head>
-  <body>
-    <div class="topbar">
-      <div class="container topbar-inner">
-        <div class="topbar-contact">
-          <a href="tel:+2348171234567"><i class="bi bi-telephone-fill"></i> +234 817 123 4567</a>
-          <a href="mailto:support@vtu9ja.ng"><i class="bi bi-envelope"></i> support@vtu9ja.ng</a>
-        </div>
-        <div class="topbar-account">
-          <a href="./login.html"><i class="bi bi-person-fill"></i> Login</a>
-          <a href="./register.html"><i class="bi bi-person-plus-fill"></i> Register</a>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#006b3c">
+<meta name="description" content="Top up airtime, buy data, pay bills and do more instantly with VTU9JA.">
+<title>VTU9JA — Fast, Secure, Reliable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="m-0 min-w-80 bg-white font-['DM_Sans',sans-serif] text-[#09273a] antialiased">
+<main>
+<!-- Hero -->
+<section id="home" class="relative overflow-hidden bg-[radial-gradient(at_82%_50%,#006139_0%,transparent_45%),linear-gradient(105deg,#002c28_0%,#003c2d_55%,#004b2a_100%)] text-white md:min-h-[370px] xl:min-h-[390px]">
+  <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(#57e699_1px,transparent_1px)] [background-size:28px_28px] opacity-[.14] [mask-image:linear-gradient(90deg,transparent,#000)]"></div>
+  <div class="pointer-events-none absolute -top-[120px] left-[37%] size-[270px] rounded-full bg-[#00a95425] blur-[60px]"></div>
+  <div class="pointer-events-none absolute -bottom-40 right-0 size-[250px] rounded-full bg-[#08d77720] blur-[60px]"></div>
+
+  <div class="relative mx-auto flex w-full max-w-[1120px] flex-col px-[18px] md:grid md:min-h-[370px] md:grid-cols-[1.08fr_.92fr] md:items-center md:px-8 xl:min-h-[390px]">
+    <div class="relative z-[2] pb-0 pt-[34px] md:pb-[30px]">
+      <span class="mb-[9px] inline-block rounded-full bg-[linear-gradient(100deg,#008d50,#13ac58)] px-3.5 py-[5px] text-[11px] font-extrabold text-white">Welcome to VTU9JA</span>
+      <h1 class="mb-2 font-['Manrope',sans-serif] text-[clamp(34px,8vw,45px)] font-extrabold leading-[1.08] tracking-[-1.8px] md:text-[clamp(33px,4.1vw,45px)]">Top Up, Pay Bills,<br>Do More — <span class="text-[#22e46f]">Instantly!</span></h1>
+      <p class="mb-[19px] max-w-[465px] text-[13px] leading-normal text-[#e0f2ec] md:text-sm">Buy airtime, data, TV subscription, electricity bills and more at the best rates. Fast, secure and reliable.</p>
+
+      <div class="mb-[21px] flex items-center">
+        <div class="flex min-w-0 flex-1 items-center gap-[5px] border-r border-white/20 pr-[7px] text-[9px] leading-[1.35] md:min-w-[98px] md:flex-none md:gap-2 md:px-[13px] md:pl-0 md:text-[10px]"><span class="grid size-7 shrink-0 place-items-center rounded-full bg-[#00b34e34] text-[19px] text-[#37f27c] md:size-[31px]"><i class="bi bi-lightning-charge-fill"></i></span><span>Instant<br>Delivery</span></div>
+        <div class="flex min-w-0 flex-1 items-center gap-[5px] border-r border-white/20 px-[7px] text-[9px] leading-[1.35] md:min-w-[98px] md:flex-none md:gap-2 md:px-[13px] md:text-[10px]"><span class="grid size-7 shrink-0 place-items-center rounded-full bg-[#00b34e34] text-[19px] text-[#37f27c] md:size-[31px]"><i class="bi bi-shield-check"></i></span><span>100%<br>Secure</span></div>
+        <div class="flex min-w-0 flex-1 items-center gap-[5px] border-r border-white/20 px-[7px] text-[9px] leading-[1.35] md:min-w-[98px] md:flex-none md:gap-2 md:px-[13px] md:text-[10px]"><span class="grid size-7 shrink-0 place-items-center rounded-full bg-[#00b34e34] text-[19px] text-[#37f27c] md:size-[31px]"><i class="bi bi-hand-thumbs-up"></i></span><span>Best<br>Rates</span></div>
+        <div class="flex min-w-0 flex-1 items-center gap-[5px] px-[7px] text-[9px] leading-[1.35] md:min-w-[98px] md:flex-none md:gap-2 md:px-[13px] md:text-[10px]"><span class="grid size-7 shrink-0 place-items-center rounded-full bg-[#00b34e34] text-[19px] text-[#37f27c] md:size-[31px]"><i class="bi bi-headset"></i></span><span>24/7<br>Support</span></div>
+      </div>
+
+      <form id="quick-buy" class="grid w-full max-w-[520px] grid-cols-2 gap-[9px] rounded-[10px] bg-white p-[9px] shadow-[0_8px_25px_#001c1830] md:grid-cols-[1.45fr_1fr_116px]">
+        <label class="relative col-span-2 flex h-[39px] items-center gap-2 rounded-[7px] border border-[#d8e0e8] px-2.5 text-[#7890a2] md:col-span-1">
+          <i class="bi bi-phone text-[17px] text-[#152c3b]"></i>
+          <span class="sr-only">Phone number</span>
+          <input class="h-full w-full min-w-0 bg-transparent text-[10px] text-[#233d50] outline-0 placeholder:text-[#8191a5]" type="tel" name="phone" placeholder="Enter Phone Number" inputmode="tel" required minlength="10" maxlength="14">
+        </label>
+        <label class="relative flex h-[39px] items-center gap-2 rounded-[7px] border border-[#d8e0e8] px-2.5 text-[#7890a2]">
+          <span class="sr-only">Select service</span>
+          <select class="h-full w-full min-w-0 appearance-none bg-transparent text-[10px] font-semibold text-[#21384a] outline-0" name="service" required>
+            <option value="" disabled selected>Select Service</option>
+            <option>Airtime</option><option>Data</option><option>TV Subscription</option>
+            <option>Electricity Bills</option><option>Exam Pins</option><option>More Services</option>
+          </select>
+          <i class="bi bi-chevron-down pointer-events-none text-[11px] text-[#173147]"></i>
+        </label>
+        <button class="col-span-2 inline-flex min-h-[39px] cursor-pointer items-center justify-center gap-[9px] rounded-[7px] bg-[linear-gradient(110deg,#00834b,#00703e)] px-3 text-xs font-bold text-white transition hover:-translate-y-0.5 hover:shadow-[0_8px_22px_#007a4533] md:col-span-1" type="submit"><i class="bi bi-send-fill"></i> Buy Now</button>
+      </form>
+    </div>
+
+    <!-- Hero visual -->
+    <div class="relative flex h-[332px] w-full items-end justify-center md:h-[370px] md:w-[110%] md:-ml-[5%] md:origin-bottom md:scale-90 lg:w-full lg:ml-0 lg:scale-100 xl:h-[390px]" aria-label="VTU9JA mobile app preview">
+      <div class="absolute right-[5%] top-7 z-[1] -rotate-6 font-['Manrope',sans-serif] text-lg font-semibold italic leading-tight md:right-0 md:top-[34px] md:text-xl">Stay Connected<br><span class="ml-3 text-[#47e975]">Everyday!</span><i class="ml-[13px] mt-[5px] block h-[3px] w-[95px] -rotate-[9deg] rounded-full bg-[#22e46f]"></i></div>
+      <div class="absolute right-[3%] top-[112px] z-[3] grid w-[135px] origin-top-right scale-[.85] grid-cols-2 gap-3 md:-right-1.5 md:top-[113px] md:scale-100" aria-hidden="true">
+        <span class="grid size-[55px] place-items-center rounded-full bg-[#ffce00] text-[13px] font-extrabold italic text-[#153554] shadow-[0_6px_14px_#001d1640]">MTN</span>
+        <span class="grid size-[55px] place-items-center rounded-full bg-[#ed1232] text-xs font-extrabold text-white shadow-[0_6px_14px_#001d1640]">airtel</span>
+        <span class="grid size-[55px] place-items-center rounded-full bg-[#008b45] text-xl font-extrabold text-[#d7ff36] shadow-[0_6px_14px_#001d1640]">glo</span>
+        <span class="grid size-[55px] place-items-center rounded-full bg-white text-[22px] font-extrabold leading-[.7] text-[#0a894a] shadow-[0_6px_14px_#001d1640]">9<br><small class="text-[6px]">mobile</small></span>
+      </div>
+      <div class="absolute right-[2%] top-[245px] z-[3] flex origin-top-right scale-90 items-center gap-[9px] rounded-[11px] bg-[#00894a] px-3 py-2 text-[11px] font-bold leading-tight md:right-0 md:top-[268px] md:scale-100"><i class="bi bi-check-circle-fill text-[22px]"></i> All Networks<br>Supported</div>
+
+      <div class="relative z-[2] h-[326px] w-[205px] rounded-t-[42px] border-[6px] border-b-0 border-[#161d24] bg-[#161d24] px-1.5 pt-[9px] shadow-[0_0_0_2px_#69737c,0_18px_40px_#00171080] md:h-[348px] md:w-[214px] xl:h-[368px]">
+        <div class="absolute left-1/2 top-0 z-[4] h-5 w-[94px] -translate-x-1/2 rounded-b-[14px] bg-[#111820]"><span class="absolute right-[15px] top-1 size-[7px] rounded-full bg-[#1c4560]"></span><span class="absolute left-[17px] top-[5px] h-1 w-7 rounded-lg bg-[#26303a]"></span></div>
+        <div class="h-full overflow-hidden rounded-t-[30px] bg-slate-50 px-[9px] pt-[15px] text-[8px] text-[#15293a]">
+          <div class="flex justify-between px-[7px] pb-2.5 text-[7px] font-bold"><span>9:41</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+          <div class="mb-[7px] flex h-[27px] items-center gap-1 text-[10px]">
+            <span class="grid size-5 place-items-center rounded-md bg-[#00874b] text-sm text-white"><i class="bi bi-lightning-charge-fill"></i></span>
+            <b class="text-[13px] tracking-[-.5px]">VTU9<span class="text-[#078b4d]">JA</span></b>
+            <i class="bi bi-search ml-auto text-[11px]"></i><i class="bi bi-person-circle text-[11px]"></i>
+          </div>
+          <div class="relative flex h-[69px] flex-col gap-[5px] rounded-[13px] bg-[linear-gradient(120deg,#008b4c,#10b667)] p-2.5 text-white"><span class="text-[8px]">Wallet Balance</span><strong class="text-sm">₦ 12,500.00</strong><button class="absolute bottom-2 right-[9px] rounded-xl border-0 bg-white px-2 py-[5px] text-[7px] font-bold text-[#007740]" type="button">Fund Wallet</button></div>
+          <div class="mb-3 mt-2.5 grid grid-cols-3 gap-1.5 text-[#15293a]">
+            <div class="flex h-[49px] flex-col items-center justify-center gap-1 rounded-[10px] bg-white shadow-[0_2px_8px_#172a370a]"><i class="bi bi-phone text-[17px] text-[#0088ed]"></i><span>Airtime</span></div>
+            <div class="flex h-[49px] flex-col items-center justify-center gap-1 rounded-[10px] bg-white shadow-[0_2px_8px_#172a370a]"><i class="bi bi-wifi text-[17px] text-[#0088ed]"></i><span>Data</span></div>
+            <div class="flex h-[49px] flex-col items-center justify-center gap-1 rounded-[10px] bg-white shadow-[0_2px_8px_#172a370a]"><i class="bi bi-tv text-[17px] text-[#0088ed]"></i><span>TV</span></div>
+            <div class="flex h-[49px] flex-col items-center justify-center gap-1 rounded-[10px] bg-white shadow-[0_2px_8px_#172a370a]"><i class="bi bi-lightning-charge-fill text-[17px] text-[#ffb900]"></i><span>Electricity</span></div>
+            <div class="flex h-[49px] flex-col items-center justify-center gap-1 rounded-[10px] bg-white shadow-[0_2px_8px_#172a370a]"><i class="bi bi-mortarboard-fill text-[17px] text-[#fb4261]"></i><span>Exam Pins</span></div>
+            <div class="flex h-[49px] flex-col items-center justify-center gap-1 rounded-[10px] bg-white shadow-[0_2px_8px_#172a370a]"><i class="bi bi-three-dots text-[17px] text-[#168fff]"></i><span>More</span></div>
+          </div>
+          <div class="mb-2 flex justify-between text-[8px]"><b>Recent Transactions</b><a class="text-[#078b4d]" href="#services">View All</a></div>
+          <div class="flex h-[38px] items-center gap-[7px] border-t border-[#e9edf0] text-[7px]"><span class="grid size-[17px] place-items-center rounded-full bg-[#ffca00] text-[5px] font-extrabold text-[#102d5b]">MTN</span><span class="flex flex-col gap-[3px]">Data Subscription<small class="text-[6px] text-[#8091a1]">MTN 1.5GB</small></span><b class="ml-auto text-[8px]">₦ 1,200</b></div>
+          <div class="flex h-[38px] items-center gap-[7px] border-t border-[#e9edf0] text-[7px]"><span class="grid size-[17px] place-items-center rounded-full bg-[#ed1b35] text-[5px] font-extrabold text-white">A</span><span class="flex flex-col gap-[3px]">Airtime Top-up<small class="text-[6px] text-[#8091a1]">Airtel · Today</small></span><b class="ml-auto text-[8px]">₦ 500</b></div>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#home" aria-label="VTU9JA home">
-          <span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
-          <span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span>
-        </a>
-        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i class="bi bi-list"></i></button>
-        <nav class="main-nav" aria-label="Main navigation">
-          <a class="active" href="#home">Home</a>
-          <a href="./buy-airtime.html">Airtime</a>
-          <a href="./buy-data.html">Data</a>
-          <a href="./pay-bills.html?type=tv">TV</a>
-          <a href="./pay-bills.html?type=electricity">Electricity</a>
-          <a href="./exam-pins.html">Exam Pins</a>
-          <a href="./more-services.html">More Services</a>
-          <a href="./about.html">About</a>
-          <a href="./contact.html">Contact</a>
-        </nav>
-        <a class="button button-nav" href="./login.html"><i class="bi bi-person-fill"></i> Login / Register</a>
+<!-- Services -->
+<section id="services" class="py-[31px]">
+  <div class="mx-auto grid w-full max-w-[1120px] items-start gap-5 px-[18px] md:grid-cols-[.8fr_2.2fr] md:gap-6 md:px-8 lg:grid-cols-[.95fr_2.05fr] lg:gap-[35px]">
+    <div class="md:pt-2.5">
+      <span class="mb-2 inline-block text-[13px] font-extrabold text-[#00874b]">Our Services</span>
+      <h2 class="mb-2.5 font-['Manrope',sans-serif] text-[25px] font-extrabold leading-[1.22] tracking-[-.8px]">Everything You Need<br class="max-md:hidden"> in One Place</h2>
+      <p class="mb-[17px] max-w-[380px] text-xs leading-[1.6] text-[#536f85] md:max-w-[280px]">We provide a seamless platform to help you stay connected and pay your bills with ease.</p>
+      <a class="inline-flex min-h-[37px] items-center justify-center gap-[9px] rounded-[9px] bg-[linear-gradient(110deg,#00834b,#00703e)] px-5 text-[11px] font-bold text-white transition hover:-translate-y-0.5 hover:shadow-[0_8px_22px_#007a4533]" href="./register.html">Get Started <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="grid grid-cols-2 gap-2.5 md:grid-cols-4 md:gap-[9px] lg:gap-3">
+      <a class="flex min-h-[150px] flex-col rounded-[14px] bg-[linear-gradient(135deg,#f1f8ff,#f6faff)] px-2.5 py-2.5 transition hover:-translate-y-1 hover:shadow-[0_12px_25px_#143a5312] md:px-[11px] lg:min-h-[149px] lg:px-4" href="#get-started"><span class="mb-2 grid size-[42px] place-items-center rounded-[14px] bg-[#078bf0] text-[22px] text-white"><i class="bi bi-phone"></i></span><h3 class="mb-1 text-[13px] font-extrabold">Airtime</h3><p class="mb-2 min-h-[29px] text-[10px] leading-[1.45] text-[#627c91]">Buy airtime for all networks at the best rates.</p><span class="mt-auto flex items-center gap-[7px] text-[10px] font-bold text-[#007a45]">Buy Now <i class="bi bi-arrow-right"></i></span></a>
+      <a class="flex min-h-[150px] flex-col rounded-[14px] bg-[linear-gradient(135deg,#f0faf5,#f6fbf8)] px-2.5 py-2.5 transition hover:-translate-y-1 hover:shadow-[0_12px_25px_#143a5312] md:px-[11px] lg:min-h-[149px] lg:px-4" href="#get-started"><span class="mb-2 grid size-[42px] place-items-center rounded-[14px] bg-[#05a342] text-[22px] text-white"><i class="bi bi-globe"></i></span><h3 class="mb-1 text-[13px] font-extrabold">Data</h3><p class="mb-2 min-h-[29px] text-[10px] leading-[1.45] text-[#627c91]">Get data for browsing, streaming and more.</p><span class="mt-auto flex items-center gap-[7px] text-[10px] font-bold text-[#007a45]">Buy Now <i class="bi bi-arrow-right"></i></span></a>
+      <a class="flex min-h-[150px] flex-col rounded-[14px] bg-[linear-gradient(135deg,#f8f3ff,#fcfaff)] px-2.5 py-2.5 transition hover:-translate-y-1 hover:shadow-[0_12px_25px_#143a5312] md:px-[11px] lg:min-h-[149px] lg:px-4" href="./pay-bills.html?type=tv"><span class="mb-2 grid size-[42px] place-items-center rounded-[14px] bg-[#a614eb] text-[22px] text-white"><i class="bi bi-tv"></i></span><h3 class="mb-1 text-[13px] font-extrabold">TV Subscription</h3><p class="mb-2 min-h-[29px] text-[10px] leading-[1.45] text-[#627c91]">Pay for your favorite TV channels.</p><span class="mt-auto flex items-center gap-[7px] text-[10px] font-bold text-[#007a45]">Buy Now <i class="bi bi-arrow-right"></i></span></a>
+      <a class="flex min-h-[150px] flex-col rounded-[14px] bg-[linear-gradient(135deg,#fffaf0,#fffdf8)] px-2.5 py-2.5 transition hover:-translate-y-1 hover:shadow-[0_12px_25px_#143a5312] md:px-[11px] lg:min-h-[149px] lg:px-4" href="./pay-bills.html?type=electricity"><span class="mb-2 grid size-[42px] place-items-center rounded-[14px] bg-[#fb0] text-[22px] text-white"><i class="bi bi-lightning-charge-fill"></i></span><h3 class="mb-1 text-[13px] font-extrabold">Electricity Bills</h3><p class="mb-2 min-h-[29px] text-[10px] leading-[1.45] text-[#627c91]">Pay your electricity bills instantly.</p><span class="mt-auto flex items-center gap-[7px] text-[10px] font-bold text-[#007a45]">Buy Now <i class="bi bi-arrow-right"></i></span></a>
+      <a class="flex min-h-[150px] flex-col rounded-[14px] bg-[linear-gradient(135deg,#fff5f6,#fffafa)] px-2.5 py-2.5 transition hover:-translate-y-1 hover:shadow-[0_12px_25px_#143a5312] md:px-[11px] lg:min-h-[149px] lg:px-4" href="./exam-pins.html"><span class="mb-2 grid size-[42px] place-items-center rounded-[14px] bg-[#fc3050] text-[22px] text-white"><i class="bi bi-mortarboard-fill"></i></span><h3 class="mb-1 text-[13px] font-extrabold">Exam Pins</h3><p class="mb-2 min-h-[29px] text-[10px] leading-[1.45] text-[#627c91]">Buy WAEC, NECO, JAMB and other exam pins.</p><span class="mt-auto flex items-center gap-[7px] text-[10px] font-bold text-[#007a45]">Buy Now <i class="bi bi-arrow-right"></i></span></a>
+      <a class="flex min-h-[150px] flex-col rounded-[14px] bg-[linear-gradient(135deg,#f0fafb,#f8fcfc)] px-2.5 py-2.5 transition hover:-translate-y-1 hover:shadow-[0_12px_25px_#143a5312] md:px-[11px] lg:min-h-[149px] lg:px-4" href="#get-started"><span class="mb-2 grid size-[42px] place-items-center rounded-[14px] bg-[#05a9bc] text-[22px] text-white"><i class="bi bi-tv"></i></span><h3 class="mb-1 text-[13px] font-extrabold">Cable TV</h3><p class="mb-2 min-h-[29px] text-[10px] leading-[1.45] text-[#627c91]">Enjoy your favorite cable TV channels.</p><span class="mt-auto flex items-center gap-[7px] text-[10px] font-bold text-[#007a45]">Buy Now <i class="bi bi-arrow-right"></i></span></a>
+      <a class="flex min-h-[150px] flex-col rounded-[14px] bg-[linear-gradient(135deg,#f3f5ff,#fafaff)] px-2.5 py-2.5 transition hover:-translate-y-1 hover:shadow-[0_12px_25px_#143a5312] md:px-[11px] lg:min-h-[149px] lg:px-4" href="#get-started"><span class="mb-2 grid size-[42px] place-items-center rounded-[14px] bg-[#4638ce] text-[22px] text-white"><i class="bi bi-router-fill"></i></span><h3 class="mb-1 text-[13px] font-extrabold">Internet Services</h3><p class="mb-2 min-h-[29px] text-[10px] leading-[1.45] text-[#627c91]">Buy internet bundles and data plans.</p><span class="mt-auto flex items-center gap-[7px] text-[10px] font-bold text-[#1758c5]">Buy Now <i class="bi bi-arrow-right"></i></span></a>
+      <a class="flex min-h-[150px] flex-col rounded-[14px] bg-[linear-gradient(135deg,#f5f7f8,#fbfcfd)] px-2.5 py-2.5 transition hover:-translate-y-1 hover:shadow-[0_12px_25px_#143a5312] md:px-[11px] lg:min-h-[149px] lg:px-4" href="./more-services.html"><span class="mb-2 grid size-[42px] place-items-center rounded-[14px] bg-[#7e8991] text-[22px] text-white"><i class="bi bi-three-dots"></i></span><h3 class="mb-1 text-[13px] font-extrabold">More Services</h3><p class="mb-2 min-h-[29px] text-[10px] leading-[1.45] text-[#627c91]">Airtime to Cash, Gift Card, and more.</p><span class="mt-auto flex items-center gap-[7px] text-[10px] font-bold text-[#293f50]">View All <i class="bi bi-arrow-right"></i></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section id="why-us" class="overflow-hidden bg-[linear-gradient(110deg,#eafbf4,#f4fcf9)]">
+  <div class="mx-auto grid w-full max-w-[1120px] items-center px-[18px] md:min-h-60 md:grid-cols-[.85fr_1.5fr] md:gap-[30px] md:px-8">
+    <div class="relative mx-auto min-h-[215px] w-full max-w-[390px] self-stretch overflow-hidden md:m-0 md:min-h-60 md:max-w-none" aria-hidden="true">
+      <img class="h-[400px] w-auto" src="/img/fra.png" alt="">
+      <div class="absolute left-[61%] top-[58px] -rotate-[8deg] font-['Manrope',sans-serif] text-[19px] font-bold italic leading-[1.14] text-[greenyellow] md:left-[226px] md:top-[66px]">Simple.<br>Fast.<br>Reliable.<i class="ml-2.5 mt-[5px] block h-[3px] w-[73px] -rotate-[9deg] rounded-full bg-[#22e46f]"></i></div>
+    </div>
+    <div class="pb-[26px] md:py-[25px]">
+      <h2 class="mb-[7px] font-['Manrope',sans-serif] text-[21px] font-extrabold leading-[1.22] tracking-[-.8px]">Why Choose VTU9JA?</h2>
+      <p class="mb-4 max-w-[460px] text-xs leading-[1.6] text-[#536f85]">We are committed to providing you with the best VTU services with speed, security and excellent customer support.</p>
+      <div class="grid grid-cols-2 gap-y-[18px] md:grid-cols-4">
+        <div class="min-h-[105px] border-r border-[#d4e9e0] pl-1 pr-[13px] md:min-h-0 md:px-[13px] md:first:pl-1"><span class="mb-[7px] grid size-9 place-items-center rounded-full bg-[linear-gradient(135deg,#10b369,#007346)] text-lg text-white"><i class="bi bi-lightning-charge-fill"></i></span><h3 class="mb-[5px] text-xs font-extrabold">Instant Delivery</h3><p class="text-[10px] leading-[1.45] text-[#5c7889]">Get your services in seconds.</p></div>
+        <div class="min-h-[105px] border-[#d4e9e0] px-[13px] max-md:border-r-0 md:min-h-0 md:border-r"><span class="mb-[7px] grid size-9 place-items-center rounded-full bg-[linear-gradient(135deg,#10b369,#007346)] text-lg text-white"><i class="bi bi-shield-check"></i></span><h3 class="mb-[5px] text-xs font-extrabold">Safe &amp; Secure</h3><p class="text-[10px] leading-[1.45] text-[#5c7889]">Your data and transactions are always protected.</p></div>
+        <div class="min-h-[105px] border-r border-[#d4e9e0] pl-1 pr-[13px] md:min-h-0 md:px-[13px]"><span class="mb-[7px] grid size-9 place-items-center rounded-full bg-[linear-gradient(135deg,#10b369,#007346)] text-lg text-white"><i class="bi bi-star-fill"></i></span><h3 class="mb-[5px] text-xs font-extrabold">Best Prices</h3><p class="text-[10px] leading-[1.45] text-[#5c7889]">We offer the most competitive rates in the market.</p></div>
+        <div class="min-h-[105px] px-[13px] md:min-h-0"><span class="mb-[7px] grid size-9 place-items-center rounded-full bg-[linear-gradient(135deg,#10b369,#007346)] text-lg text-white"><i class="bi bi-headset"></i></span><h3 class="mb-[5px] text-xs font-extrabold">24/7 Support</h3><p class="text-[10px] leading-[1.45] text-[#5c7889]">Our support team is always ready to help you.</p></div>
       </div>
-    </header>
+    </div>
+  </div>
+</section>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="hero-glow hero-glow-one"></div>
-        <div class="hero-glow hero-glow-two"></div>
-        <div class="container hero-layout">
-          <div class="hero-copy">
-            <span class="eyebrow eyebrow-bright">Welcome to VTU9JA</span>
-            <h1>Top Up, Pay Bills,<br>Do More — <span>Instantly!</span></h1>
-            <p class="hero-description">Buy airtime, data, TV subscription, electricity bills and more at the best rates. Fast, secure and reliable.</p>
-            <div class="hero-perks">
-              <div class="hero-perk"><span class="perk-icon"><i class="bi bi-lightning-charge-fill"></i></span><span>Instant<br>Delivery</span></div>
-              <div class="hero-perk"><span class="perk-icon"><i class="bi bi-shield-check"></i></span><span>100%<br>Secure</span></div>
-              <div class="hero-perk"><span class="perk-icon"><i class="bi bi-hand-thumbs-up"></i></span><span>Best<br>Rates</span></div>
-              <div class="hero-perk"><span class="perk-icon"><i class="bi bi-headset"></i></span><span>24/7<br>Support</span></div>
-            </div>
-            <form class="quick-buy" id="quick-buy">
-              <label class="phone-field">
-                <i class="bi bi-phone"></i>
-                <span class="sr-only">Phone number</span>
-                <input type="tel" name="phone" placeholder="Enter Phone Number" inputmode="tel" required minlength="10" maxlength="14">
-              </label>
-              <label class="service-field">
-                <span class="sr-only">Select service</span>
-                <select name="service" required>
-                  <option value="" disabled selected>Select Service</option>
-                  <option>Airtime</option><option>Data</option><option>TV Subscription</option>
-                  <option>Electricity Bills</option><option>Exam Pins</option><option>More Services</option>
-                </select>
-                <i class="bi bi-chevron-down"></i>
-              </label>
-              <button class="button quick-buy-button" type="submit"><i class="bi bi-send-fill"></i> Buy Now</button>
-            </form>
-          </div>
+<!-- How it works -->
+<section id="get-started" class="pb-6 pt-4">
+  <div class="mx-auto w-full max-w-[1120px] px-[18px] md:px-8">
+    <div class="text-center">
+      <span class="mb-0.5 inline-block text-[13px] font-extrabold text-[#00874b]">How It Works</span>
+      <h2 class="mb-[5px] font-['Manrope',sans-serif] text-[21px] font-extrabold leading-[1.22] tracking-[-.8px]">Get Started in 3 Easy Steps</h2>
+      <p class="mb-5 text-[11px] text-[#637d91]">It's quick and simple. Follow these steps to start using VTU9JA today.</p>
+    </div>
+    <div class="mx-auto grid max-w-[380px] items-center gap-[18px] md:max-w-[760px] md:grid-cols-[1fr_28px_1fr_28px_1fr] md:gap-0">
+      <a class="grid grid-cols-[30px_42px_1fr] items-start gap-3" href="./register.html"><span class="mt-[3px] grid size-[25px] place-items-center rounded-full bg-[#00804a] text-xs font-extrabold text-white">1</span><i class="bi bi-person-fill text-[32px] leading-none text-[#00834c]"></i><div><h3 class="my-1 text-[11px] font-extrabold">Create Account</h3><p class="text-[9px] leading-normal text-[#657c8f]">Sign up with your phone number and get verified.</p></div></a>
+      <i class="bi bi-chevron-right justify-self-center text-base text-[#008348] max-md:hidden"></i>
+      <div class="grid grid-cols-[30px_42px_1fr] items-start gap-3"><span class="mt-[3px] grid size-[25px] place-items-center rounded-full bg-[#00804a] text-xs font-extrabold text-white">2</span><i class="bi bi-wallet2 text-[32px] leading-none text-[#00834c]"></i><div><h3 class="my-1 text-[11px] font-extrabold">Fund Wallet</h3><p class="text-[9px] leading-normal text-[#657c8f]">Add money to your wallet using our secure payment options.</p></div></div>
+      <i class="bi bi-chevron-right justify-self-center text-base text-[#008348] max-md:hidden"></i>
+      <div class="grid grid-cols-[30px_42px_1fr] items-start gap-3"><span class="mt-[3px] grid size-[25px] place-items-center rounded-full bg-[#00804a] text-xs font-extrabold text-white">3</span><i class="bi bi-lightning-charge-fill text-[32px] leading-none text-[#00834c]"></i><div><h3 class="my-1 text-[11px] font-extrabold">Buy Service</h3><p class="text-[9px] leading-normal text-[#657c8f]">Select your service, enter details and make payment.</p></div></div>
+    </div>
+  </div>
+</section>
 
-          <div class="hero-visual" aria-label="VTU9JA mobile app preview">
-            <div class="connected-note">Stay Connected<br><span>Everyday!</span><i></i></div>
-            <div class="network-cloud" aria-hidden="true">
-              <span class="network-logo network-mtn">MTN</span>
-              <span class="network-logo network-airtel">airtel</span>
-              <span class="network-logo network-glo">glo</span>
-              <span class="network-logo network-9mobile">9<br><small>mobile</small></span>
-            </div>
-            <div class="supported-pill"><i class="bi bi-check-circle-fill"></i> All Networks<br>Supported</div>
-            <div class="phone-mock">
-              <div class="phone-notch"><span></span></div>
-              <div class="phone-screen">
-                <div class="phone-status"><span>9:41</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
-                <div class="phone-brand"><span class="mini-mark"><i class="bi bi-lightning-charge-fill"></i></span><b>VTU9<span>JA</span></b><i class="bi bi-search"></i><i class="bi bi-person-circle"></i></div>
-                <div class="wallet-card"><span>Wallet Balance</span><strong>₦ 12,500.00</strong><button type="button">Fund Wallet</button></div>
-                <div class="phone-services">
-                  <div><i class="bi bi-phone"></i><span>Airtime</span></div><div><i class="bi bi-wifi"></i><span>Data</span></div><div><i class="bi bi-tv"></i><span>TV</span></div>
-                  <div><i class="bi bi-lightning-charge-fill"></i><span>Electricity</span></div><div><i class="bi bi-mortarboard-fill"></i><span>Exam Pins</span></div><div><i class="bi bi-three-dots"></i><span>More</span></div>
-                </div>
-                <div class="transactions-heading"><b>Recent Transactions</b><a href="#services">View All</a></div>
-                <div class="transaction-row"><span class="mini-network">MTN</span><span>Data Subscription<small>MTN 1.5GB</small></span><b>₦ 1,200</b></div>
-                <div class="transaction-row"><span class="mini-network mini-network-airtel">A</span><span>Airtime Top-up<small>Airtel · Today</small></span><b>₦ 500</b></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<!-- Trusted -->
+<section class="bg-[linear-gradient(90deg,#f3f9ff,#f6fbff)] py-3.5">
+  <div class="mx-auto flex w-full max-w-[1120px] flex-col items-start gap-[15px] px-[18px] md:flex-row md:items-center md:justify-between md:gap-[30px] md:px-8">
+    <div><h2 class="mb-1 text-[13px] font-extrabold text-[#007a45]">Trusted by Millions</h2><p class="text-[10px] text-[#627c91]">We serve customers across Nigeria and beyond.</p></div>
+    <div class="flex w-full flex-wrap items-center justify-start gap-x-[25px] gap-y-[18px] md:flex-1 md:flex-nowrap md:justify-between md:gap-[clamp(18px,3.2vw,40px)]" aria-label="Supported providers">
+      <span class="grid h-7 w-[58px] -skew-x-[13deg] place-items-center rounded-[50%] bg-[#fc0] text-sm font-black italic text-[#173958]">MTN</span>
+      <span class="text-lg font-extrabold italic text-[#e51f35]">airtel</span>
+      <span class="grid size-10 place-items-center rounded-full bg-[radial-gradient(circle_at_30%_25%,#70e34a,#007b32_72%)] text-[17px] font-extrabold text-white">glo</span>
+      <span class="text-[22px] font-extrabold leading-[.7] text-[#078a4b]">9<small class="text-[6px]">mobile</small></span>
+      <span class="text-[15px] font-extrabold text-[#008cf0]">DStv</span>
+      <span class="text-[15px] font-black text-[#ed183b]">GOtv</span>
+      <span class="whitespace-nowrap text-[10px] font-bold text-[#172330]">✦ StarTimes</span>
+    </div>
+  </div>
+</section>
+</main>
 
-      <section class="services section-pad" id="services">
-        <div class="container services-layout">
-          <div class="section-intro">
-            <span class="eyebrow">Our Services</span>
-            <h2>Everything You Need<br>in One Place</h2>
-            <p>We provide a seamless platform to help you stay connected and pay your bills with ease.</p>
-            <a class="button" href="./register.html">Get Started <i class="bi bi-arrow-right"></i></a>
-          </div>
-          <div class="service-grid">
-            <a class="service-card card-blue" href="#get-started"><span class="service-icon"><i class="bi bi-phone"></i></span><h3>Airtime</h3><p>Buy airtime for all networks at the best rates.</p><span class="service-link">Buy Now <i class="bi bi-arrow-right"></i></span></a>
-            <a class="service-card card-green" href="#get-started"><span class="service-icon"><i class="bi bi-globe"></i></span><h3>Data</h3><p>Get data for browsing, streaming and more.</p><span class="service-link">Buy Now <i class="bi bi-arrow-right"></i></span></a>
-            <a class="service-card card-purple" href="./pay-bills.html?type=tv"><span class="service-icon"><i class="bi bi-tv"></i></span><h3>TV Subscription</h3><p>Pay for your favorite TV channels.</p><span class="service-link">Buy Now <i class="bi bi-arrow-right"></i></span></a>
-            <a class="service-card card-yellow" href="./pay-bills.html?type=electricity"><span class="service-icon"><i class="bi bi-lightning-charge-fill"></i></span><h3>Electricity Bills</h3><p>Pay your electricity bills instantly.</p><span class="service-link">Buy Now <i class="bi bi-arrow-right"></i></span></a>
-            <a class="service-card card-red" href="./exam-pins.html"><span class="service-icon"><i class="bi bi-mortarboard-fill"></i></span><h3>Exam Pins</h3><p>Buy WAEC, NECO, JAMB and other exam pins.</p><span class="service-link">Buy Now <i class="bi bi-arrow-right"></i></span></a>
-            <a class="service-card card-teal" href="#get-started"><span class="service-icon"><i class="bi bi-tv"></i></span><h3>Cable TV</h3><p>Enjoy your favorite cable TV channels.</p><span class="service-link">Buy Now <i class="bi bi-arrow-right"></i></span></a>
-            <a class="service-card card-indigo" href="#get-started"><span class="service-icon"><i class="bi bi-router-fill"></i></span><h3>Internet Services</h3><p>Buy internet bundles and data plans.</p><span class="service-link">Buy Now <i class="bi bi-arrow-right"></i></span></a>
-            <a class="service-card card-slate" href="./more-services.html"><span class="service-icon"><i class="bi bi-three-dots"></i></span><h3>More Services</h3><p>Airtime to Cash, Gift Card, and more.</p><span class="service-link">View All <i class="bi bi-arrow-right"></i></span></a>
-          </div>
-        </div>
-      </section>
-
-      <section class="why-us" id="why-us">
-        <div class="container why-layout">
-          <div class="why-art" aria-hidden="true">
-            <!-- <div class="art-sun"></div><div class="art-person"><div class="art-hair"></div><div class="art-face"></div><div class="art-body"></div><div class="art-phone"><i class="bi bi-phone"></i></div></div> -->
-            <img src="/img/fra.png" height="400px">
-            <div class="art-caption" style="color: greenyellow;">Simple.<br>Fast.<br>Reliable.<i></i></div>
-          </div>
-          <div class="why-content">
-            <h2>Why Choose VTU9JA?</h2>
-            <p>We are committed to providing you with the best VTU services with speed, security and excellent customer support.</p>
-            <div class="benefit-grid">
-              <div class="benefit"><span><i class="bi bi-lightning-charge-fill"></i></span><h3>Instant Delivery</h3><p>Get your services in seconds.</p></div>
-              <div class="benefit"><span><i class="bi bi-shield-check"></i></span><h3>Safe &amp; Secure</h3><p>Your data and transactions are always protected.</p></div>
-              <div class="benefit"><span><i class="bi bi-star-fill"></i></span><h3>Best Prices</h3><p>We offer the most competitive rates in the market.</p></div>
-              <div class="benefit"><span><i class="bi bi-headset"></i></span><h3>24/7 Support</h3><p>Our support team is always ready to help you.</p></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="how-it-works section-pad" id="get-started">
-        <div class="container">
-          <div class="center-heading"><span class="eyebrow">How It Works</span><h2>Get Started in 3 Easy Steps</h2><p>It's quick and simple. Follow these steps to start using VTU9JA today.</p></div>
-          <div class="steps">
-            <a class="step" href="./register.html"><span class="step-number">1</span><i class="bi bi-person-fill"></i><div><h3>Create Account</h3><p>Sign up with your phone number and get verified.</p></div></a>
-            <i class="bi bi-chevron-right step-arrow"></i>
-            <div class="step"><span class="step-number">2</span><i class="bi bi-wallet2"></i><div><h3>Fund Wallet</h3><p>Add money to your wallet using our secure payment options.</p></div></div>
-            <i class="bi bi-chevron-right step-arrow"></i>
-            <div class="step"><span class="step-number">3</span><i class="bi bi-lightning-charge-fill"></i><div><h3>Buy Service</h3><p>Select your service, enter details and make payment.</p></div></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="trusted">
-        <div class="container trusted-inner">
-          <div><h2>Trusted by Millions</h2><p>We serve customers across Nigeria and beyond.</p></div>
-          <div class="trusted-logos" aria-label="Supported providers"><span class="logo-mtn">MTN</span><span class="logo-airtel">airtel</span><span class="logo-glo">glo</span><span class="logo-9mobile">9<small>mobile</small></span><span class="logo-dstv">DStv</span><span class="logo-gotv">GOtv</span><span class="logo-startimes">✦ StarTimes</span></div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer" id="footer">
-      <div class="container footer-main">
-        <div class="footer-about">
-          <a class="brand brand-light" href="#home"><span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span><span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span></a>
-          <p>Your one-stop VTU platform for airtime, data, TV subscription, electricity bills and more. Stay connected. Always.</p>
-          <div class="social-links"><a href="#footer" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#footer" aria-label="X"><i class="bi bi-twitter-x"></i></a><a href="#footer" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#footer" aria-label="YouTube"><i class="bi bi-youtube"></i></a></div>
-        </div>
-        <div class="footer-column"><h2>Quick Links</h2><div class="footer-link-grid"><a href="#home">Home</a><a href="./exam-pins.html">Exam Pins</a><a href="./buy-airtime.html">Airtime</a><a href="./more-services.html">More Services</a><a href="./buy-data.html">Data</a><a href="./about.html">About Us</a><a href="./pay-bills.html?type=tv">TV Subscription</a><a href="./contact.html">Contact</a><a href="./pay-bills.html?type=electricity">Electricity Bills</a></div></div>
-        <div class="footer-column"><h2>Help &amp; Support</h2><a href="#footer">FAQs</a><a href="#footer">Terms &amp; Conditions</a><a href="#footer">Privacy Policy</a><a href="#footer">Refund Policy</a><a href="#get-started">How It Works</a></div>
-        <div class="footer-newsletter"><h2>Subscribe to Our Newsletter</h2><p>Get the latest updates and offers.</p><form id="newsletter-form"><label class="sr-only" for="newsletter-email">Your email address</label><input id="newsletter-email" type="email" placeholder="Enter your email address" required><button type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button></form></div>
+<!-- Footer -->
+<footer id="footer" class="bg-[linear-gradient(105deg,#052d2c,#00332e)] text-[#e5f4f0]">
+  <div class="mx-auto grid w-full max-w-[1120px] grid-cols-2 gap-x-3 gap-y-5 px-[18px] pb-4 pt-5 min-[391px]:gap-x-[18px] min-[391px]:gap-y-6 md:px-8 lg:grid-cols-[1.3fr_1fr_.9fr_1.35fr] lg:gap-10">
+    <div class="col-span-2 lg:col-span-1">
+      <a class="inline-flex items-center gap-[7px]" href="#home">
+        <span class="grid h-[38px] w-[37px] place-items-center bg-[#078b4d] text-[26px] text-white [clip-path:polygon(25%_0,100%_0,77%_100%,0_100%)]"><i class="bi bi-lightning-charge-fill"></i></span>
+        <span class="flex flex-col leading-none"><span class="font-['Manrope',sans-serif] text-[26px] font-extrabold leading-none tracking-[-1.6px] text-white md:text-[29px]">VTU9<span class="text-[#078849]">JA</span></span><span class="mt-[3px] text-[10px] tracking-[.35px] text-[#c5e0d8]">Fast · Secure · Reliable</span></span>
+      </a>
+      <p class="my-2 max-w-[220px] text-[10px] leading-normal text-[#d0e3df]">Your one-stop VTU platform for airtime, data, TV subscription, electricity bills and more. Stay connected. Always.</p>
+      <div class="flex gap-2">
+        <a class="grid size-[22px] place-items-center rounded-full border border-[#6b9691] text-[11px]" href="https://www.facebook.com/mbaogu stanley" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a class="grid size-[22px] place-items-center rounded-full border border-[#6b9691] text-[11px]" href="https://x.com/mbaogustan5180" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+        <a class="grid size-[22px] place-items-center rounded-full border border-[#6b9691] text-[11px]" href="#footer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a class="grid size-[22px] place-items-center rounded-full border border-[#6b9691] text-[11px]" href="https://www.youtube.com/@MbaoguStanley" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
       </div>
-      <div class="footer-bottom"><div class="container footer-bottom-inner"><span>© 2025 VTU9JA. All rights reserved.</span><div><span><i class="bi bi-shield-check"></i> Secure Payments</span><span>24/7 Support</span><span>Fast Delivery</span></div></div></div>
-    </footer>
-    <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script type="module" src="./src/main.js"></script>
-  </body>
+    </div>
+    <div>
+      <h2 class="mb-[9px] mt-0.5 text-[11px] font-extrabold text-white">Quick Links</h2>
+      <div class="grid grid-cols-2 gap-x-3 text-[9px] text-[#d0e3df] [&>a]:mb-1.5 [&>a:hover]:text-[#53e890]">
+        <a href="#home">Home</a><a href="./exam-pins.html">Exam Pins</a><a href="./buy-airtime.html">Airtime</a><a href="./more-services.html">More Services</a><a href="./buy-data.html">Data</a><a href="./about.html">About Us</a><a href="./pay-bills.html?type=tv">TV Subscription</a><a href="./contact.html">Contact</a><a href="./pay-bills.html?type=electricity">Electricity Bills</a>
+      </div>
+    </div>
+    <div>
+      <h2 class="mb-[9px] mt-0.5 text-[11px] font-extrabold text-white">Help &amp; Support</h2>
+      <div class="text-[9px] text-[#d0e3df] [&>a]:mb-1.5 [&>a]:block [&>a:hover]:text-[#53e890]">
+        <a href="#footer">FAQs</a><a href="#footer">Terms &amp; Conditions</a><a href="#footer">Privacy Policy</a><a href="#footer">Refund Policy</a><a href="#get-started">How It Works</a>
+      </div>
+    </div>
+    <div class="col-span-2 lg:col-span-1">
+      <h2 class="mb-[9px] mt-0.5 text-[11px] font-extrabold text-white">Subscribe to Our Newsletter</h2>
+      <p class="mb-2 max-w-[220px] text-[10px] leading-normal text-[#d0e3df]">Get the latest updates and offers.</p>
+      <form id="newsletter-form" class="flex h-[33px] overflow-hidden rounded-md border border-[#b5d0c7] bg-white">
+        <label class="sr-only" for="newsletter-email">Your email address</label>
+        <input id="newsletter-email" class="min-w-0 w-full flex-1 border-0 px-[11px] text-[9px] text-[#17354a] outline-0" type="email" placeholder="Enter your email address" required>
+        <button class="w-[43px] cursor-pointer border-0 bg-[#06a652] text-sm text-white" type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button>
+      </form>
+    </div>
+  </div>
+  <div class="border-t border-white/15">
+    <div class="mx-auto flex w-full max-w-[1120px] flex-col items-start justify-between gap-[9px] px-[18px] py-2.5 text-[9px] text-[#c4d9d6] md:min-h-[35px] md:flex-row md:items-center md:px-8 md:py-0">
+      <span>© 2025 VTU9JA. All rights reserved.</span>
+      <div class="flex flex-wrap gap-[13px] md:gap-[22px]"><span><i class="bi bi-shield-check mr-1"></i> Secure Payments</span><span>24/7 Support</span><span>Fast Delivery</span></div>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="pointer-events-none fixed bottom-6 right-6 z-10 max-w-[calc(100%-48px)] translate-y-3 rounded-lg bg-[#063c30] px-[18px] py-3 text-[13px] text-white opacity-0 shadow-[0_8px_28px_#001b1740] transition [&.visible]:translate-y-0 [&.visible]:opacity-100" role="status" aria-live="polite"></div>
+<script type="module">
+  import mainHeader from './main-header.js';
+   mainHeader();
+</script>
+</body>
 </html>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#063e32">
+    <meta name="description" content="Create your VTU9JA account to top up, buy data and pay bills.">
+    <title>Create Account — VTU9JA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./dist/styles.css">
+    <link rel="stylesheet" href="./auth.css">
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-contact">
+          <a href="tel:+2347033936505"><i class="bi bi-telephone-fill"></i> +234 7033936505</a>
+          <a href="mailto:support@vtu9ja.ng"><i class="bi bi-envelope"></i> support@vtu9ja.ng</a>
+        </div>
+        <div class="topbar-account">
+          <a href="./login.html"><i class="bi bi-person-fill"></i> Login</a>
+          <a href="./register.html" aria-current="page"><i class="bi bi-person-plus-fill"></i> Register</a>
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html#home" aria-label="VTU9JA home">
+          <span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
+          <span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i class="bi bi-list"></i></button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="./index.html#home">Home</a>
+          <a href="./buy-airtime.html">Airtime</a>
+          <a href="./buy-data.html">Data</a>
+          <a href="./pay-bills.html?type=tv">TV</a>
+          <a href="./pay-bills.html?type=electricity">Electricity</a>
+          <a href="./exam-pins.html">Exam Pins</a>
+          <a href="./more-services.html">More Services</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <a class="button button-nav" href="./login.html"><i class="bi bi-person-fill"></i> Sign In</a>
+      </div>
+    </header>
+    <main class="auth-shell">
+      <aside class="auth-promo">
+        <a class="auth-brand" href="./index.html" aria-label="VTU9JA home">
+          <span class="auth-brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
+          <span class="auth-brand-copy"><span class="auth-brand-name">VTU9<span>JA</span></span><span class="auth-brand-tagline">Fast · Secure · Reliable</span></span>
+        </a>
+        <div class="promo-content">
+          <span class="promo-kicker"><i class="bi bi-stars"></i> Join VTU9JA today</span>
+          <h1>Stay connected,<br><span>the easy way.</span></h1>
+          <p>Create an account and get a simpler way to top up, pay bills and stay connected every day.</p>
+        </div>
+        <div class="promo-points">
+          <span><i class="bi bi-check-circle-fill"></i> Quick and easy account setup</span>
+          <span><i class="bi bi-shield-check"></i> Your details stay protected</span>
+          <span><i class="bi bi-lightning-charge-fill"></i> Services delivered in seconds</span>
+        </div>
+      </aside>
+
+      <section class="auth-panel" aria-labelledby="auth-title">
+        <a class="auth-brand mobile-brand" href="./index.html" aria-label="VTU9JA home">
+          <span class="auth-brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
+          <span class="auth-brand-copy"><span class="auth-brand-name">VTU9<span>JA</span></span><span class="auth-brand-tagline">Fast · Secure · Reliable</span></span>
+        </a>
+        <h1 class="auth-heading" id="auth-title">Create your account</h1>
+        <p class="auth-subheading">Already have an account? <a href="./login.html">Sign in</a>.</p>
+
+        <form class="auth-form">
+          <div class="field">
+            <label for="register-name">Full name</label>
+            <div class="field-control">
+              <i class="bi bi-person" aria-hidden="true"></i>
+              <input id="register-name" name="name" type="text" autocomplete="name" placeholder="Enter your full name" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="register-phone">Phone number</label>
+            <div class="field-control">
+              <i class="bi bi-telephone" aria-hidden="true"></i>
+              <input id="register-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 08012345678" minlength="10" maxlength="14" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="register-email">Email address</label>
+            <div class="field-control">
+              <i class="bi bi-envelope" aria-hidden="true"></i>
+              <input id="register-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="register-password">Password</label>
+            <div class="field-control">
+              <i class="bi bi-lock" aria-hidden="true"></i>
+              <input id="register-password" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required>
+              <button class="password-toggle" type="button" aria-label="Show password" aria-controls="register-password"><i class="bi bi-eye" aria-hidden="true"></i></button>
+            </div>
+          </div>
+          <div class="field">
+            <label for="register-confirm-password">Confirm password</label>
+            <div class="field-control">
+              <i class="bi bi-lock" aria-hidden="true"></i>
+              <input id="register-confirm-password" name="confirm-password" type="password" autocomplete="new-password" placeholder="Enter your password again" required>
+              <button class="password-toggle" type="button" aria-label="Show password" aria-controls="register-confirm-password"><i class="bi bi-eye" aria-hidden="true"></i></button>
+            </div>
+          </div>
+          <label class="check-option"><input type="checkbox" name="terms" required> <span>I agree to the <a href="./index.html#footer">Terms &amp; Conditions</a> and <a href="./index.html#footer">Privacy Policy</a>.</span></label>
+          <button class="auth-submit" type="submit">Create Account <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+          <p class="auth-notice" role="status" aria-live="polite"></p>
+        </form>
+        <a class="auth-home" href="./index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i> Back to homepage</a>
+      </section>
+    </main>
+    <footer class="site-footer" id="footer">
+      <div class="container footer-main">
+        <div class="footer-about">
+          <a class="brand brand-light" href="./index.html#home"><span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span><span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span></a>
+          <p>Your one-stop VTU platform for airtime, data, TV subscription, electricity bills and more. Stay connected. Always.</p>
+          <div class="social-links"><a href="#footer" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#footer" aria-label="X"><i class="bi bi-twitter-x"></i></a><a href="#footer" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#footer" aria-label="YouTube"><i class="bi bi-youtube"></i></a></div>
+        </div>
+        <div class="footer-column"><h2>Quick Links</h2><div class="footer-link-grid"><a href="./index.html#home">Home</a><a href="./exam-pins.html">Exam Pins</a><a href="./buy-airtime.html">Airtime</a><a href="./more-services.html">More Services</a><a href="./buy-data.html">Data</a><a href="./about.html">About Us</a><a href="./pay-bills.html?type=tv">TV Subscription</a><a href="./contact.html">Contact</a><a href="./pay-bills.html?type=electricity">Electricity Bills</a></div></div>
+        <div class="footer-column"><h2>Help &amp; Support</h2><a href="#footer">FAQs</a><a href="#footer">Terms &amp; Conditions</a><a href="#footer">Privacy Policy</a><a href="#footer">Refund Policy</a><a href="./index.html#get-started">How It Works</a></div>
+        <div class="footer-newsletter"><h2>Subscribe to Our Newsletter</h2><p>Get the latest updates and offers.</p><form id="newsletter-form"><label class="sr-only" for="newsletter-email">Your email address</label><input id="newsletter-email" type="email" placeholder="Enter your email address" required><button type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button></form></div>
+      </div>
+      <div class="footer-bottom"><div class="container footer-bottom-inner"><span>© 2025 VTU9JA. All rights reserved.</span><div><span><i class="bi bi-shield-check"></i> Secure Payments</span><span>24/7 Support</span><span>Fast Delivery</span></div></div></div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./auth.js"></script>
+  </body>
+</html>

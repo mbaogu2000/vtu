@@ -1,0 +1,148 @@
+.bills-heading-icon {
+  color: #b78320;
+  background: #fff6df;
+}
+
+.bill-type-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.bill-type-option {
+  min-width: 0;
+  min-height: 75px;
+  padding: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fbfcfb;
+  border: 1px solid #e6ede8;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.18s, background 0.18s, box-shadow 0.18s;
+}
+
+.bill-type-option:has(input:checked) {
+  background: #f2faf5;
+  border-color: #078849;
+  box-shadow: 0 0 0 2px #07884915;
+}
+
+.bill-type-option input {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  accent-color: #078849;
+}
+
+.bill-type-icon {
+  width: 37px;
+  height: 37px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.bill-type-electricity {
+  color: #bf8b20;
+  background: #fff5df;
+}
+
+.bill-type-tv {
+  color: #885ac2;
+  background: #f4eefb;
+}
+
+.bill-type-option > span:last-child {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.bill-type-option strong {
+  color: #29483d;
+  font-size: 10px;
+}
+
+.bill-type-option small {
+  color: #8b9a92;
+  font-size: 9px;
+}
+
+.bill-select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0 12px;
+  color: #183342;
+  background: #fff;
+  border: 1px solid #dfe8e2;
+  border-radius: 8px;
+  outline: none;
+  font: inherit;
+  font-size: 12px;
+}
+
+.bill-select:focus {
+  border-color: #078849;
+  box-shadow: 0 0 0 3px #07884916;
+}
+
+.bill-select:disabled {
+  color: #98a59e;
+  background: #f8faf8;
+}
+
+.bill-customer-field {
+  margin: 19px 0 0;
+}
+
+.customer-type-options {
+  display: flex;
+  gap: 10px;
+}
+
+.customer-type-options label {
+  min-height: 38px;
+  padding: 0 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #52665c;
+  background: #fbfcfb;
+  border: 1px solid #e6ede8;
+  border-radius: 8px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.customer-type-options input {
+  margin: 0;
+  accent-color: #078849;
+}
+
+.bill-amount-wrap > span {
+  color: #71847a;
+  font-weight: 700;
+}
+
+.bills-summary-icon {
+  color: #bf8b20;
+  background: #fff5df;
+}
+
+.bills-page [hidden] {
+  display: none !important;
+}
+
+@media (max-width: 560px) {
+  .bill-type-options {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#073d31">
+    <meta name="description" content="View and filter your VTU9JA transaction history.">
+    <title>Transactions — VTU9JA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./dist/styles.css">
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="./transactions.css">
+  </head>
+  <body class="dashboard-page transactions-page">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-contact">
+          <a href="tel:+2347033936505"><i class="bi bi-telephone-fill"></i> +234 7033936505</a>
+          <a href="mailto:support@vtu9ja.ng"><i class="bi bi-envelope"></i> support@vtu9ja.ng</a>
+        </div>
+        <div class="topbar-account">
+          <a href="./login.html"><i class="bi bi-person-fill"></i> Login</a>
+          <a href="./register.html"><i class="bi bi-person-plus-fill"></i> Register</a>
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html#home" aria-label="VTU9JA home">
+          <span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
+          <span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i class="bi bi-list"></i></button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="./index.html#home">Home</a>
+          <a href="./buy-airtime.html">Airtime</a>
+          <a href="./buy-data.html">Data</a>
+          <a href="./pay-bills.html?type=tv">TV</a>
+          <a href="./pay-bills.html?type=electricity">Electricity</a>
+          <a href="./exam-pins.html">Exam Pins</a>
+          <a href="./more-services.html">More Services</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <a class="button button-nav" href="./dashboard.html"><i class="bi bi-grid-1x2-fill"></i> My Dashboard</a>
+      </div>
+    </header>
+
+    <div class="dashboard-app">
+      <aside class="dashboard-sidebar" id="dashboard-sidebar" aria-label="Dashboard navigation">
+        <a class="dashboard-brand" href="./index.html" aria-label="VTU9JA home">
+          <span class="dashboard-brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
+          <span class="dashboard-brand-copy"><strong>VTU9<span>JA</span></strong><small>USER DASHBOARD</small></span>
+        </a>
+        <div class="sidebar-caption">MENU</div>
+        <nav class="dashboard-nav" aria-label="Account menu">
+          <a class="dashboard-nav-link" href="./dashboard.html"><i class="bi bi-grid-1x2-fill"></i><span>Overview</span></a>
+          <a class="dashboard-nav-link" href="./buy-airtime.html"><i class="bi bi-phone"></i><span>Buy Airtime</span></a>
+          <a class="dashboard-nav-link" href="./buy-data.html"><i class="bi bi-wifi"></i><span>Buy Data</span></a>
+          <a class="dashboard-nav-link" href="./pay-bills.html"><i class="bi bi-lightning-charge"></i><span>Pay Bills</span></a>
+          <a class="dashboard-nav-link active" href="./transactions.html" aria-current="page"><i class="bi bi-clock-history"></i><span>Transactions</span></a>
+        </nav>
+        <div class="sidebar-caption sidebar-caption-account">ACCOUNT</div>
+        <nav class="dashboard-nav" aria-label="Account support">
+          <a class="dashboard-nav-link" href="./profile.html"><i class="bi bi-person"></i><span>My Profile</span></a>
+          <a class="dashboard-nav-link" href="./contact.html"><i class="bi bi-headset"></i><span>Help &amp; Support</span></a>
+          <a class="dashboard-nav-link" href="./login.html"><i class="bi bi-box-arrow-left"></i><span>Sign out</span></a>
+        </nav>
+        <div class="sidebar-help">
+          <span class="sidebar-help-icon"><i class="bi bi-headset"></i></span>
+          <strong>Need a hand?</strong>
+          <p>Our support team is ready to help, any time.</p>
+          <a href="./contact.html">Contact support <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <a class="sidebar-home" href="./index.html"><i class="bi bi-arrow-left"></i> Back to VTU9JA</a>
+      </aside>
+
+      <div class="dashboard-main">
+        <header class="dashboard-topbar">
+          <button class="dashboard-menu-toggle" type="button" aria-label="Open dashboard menu" aria-expanded="false" aria-controls="dashboard-sidebar">
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="topbar-page-title"><span>Workspace</span><i class="bi bi-chevron-right"></i><strong>Transactions</strong></div>
+          <div class="topbar-actions">
+            <span class="demo-tag"><i class="bi bi-stars"></i> Demo account</span>
+            <button class="icon-button notification-button" type="button" aria-label="Notifications"><i class="bi bi-bell"></i><span class="notification-dot"></span></button>
+            <a class="profile-chip" href="./profile.html">
+              <span class="avatar">CO</span>
+              <span class="profile-chip-copy"><strong>Chioma Okafor</strong><small>Personal account</small></span>
+              <i class="bi bi-chevron-down profile-chevron"></i>
+            </a>
+          </div>
+        </header>
+
+        <main class="dashboard-content transactions-content">
+          <section class="welcome-row transactions-welcome">
+            <div>
+              <span class="welcome-date"><i class="bi bi-clock-history"></i> YOUR ACCOUNT ACTIVITY</span>
+              <h1>Transactions</h1>
+              <p>Review your wallet activity and service payments.</p>
+            </div>
+            <a class="outline-button" href="./dashboard.html"><i class="bi bi-arrow-left"></i> Back to overview</a>
+          </section>
+
+          <section class="transaction-summary" aria-label="Transaction summary">
+            <article class="transaction-summary-card">
+              <span class="transaction-summary-icon transaction-summary-count"><i class="bi bi-receipt"></i></span>
+              <span class="transaction-summary-label">Transactions shown</span>
+              <strong id="transaction-count">6</strong>
+              <small>Sample account activity</small>
+            </article>
+            <article class="transaction-summary-card">
+              <span class="transaction-summary-icon transaction-summary-credit"><i class="bi bi-arrow-down-left"></i></span>
+              <span class="transaction-summary-label">Money in</span>
+              <strong>₦35,000.00</strong>
+              <small>Wallet funding</small>
+            </article>
+            <article class="transaction-summary-card">
+              <span class="transaction-summary-icon transaction-summary-debit"><i class="bi bi-arrow-up-right"></i></span>
+              <span class="transaction-summary-label">Money out</span>
+              <strong>₦18,500.00</strong>
+              <small>Services and bills</small>
+            </article>
+          </section>
+
+          <section class="dashboard-section all-transactions-card" aria-labelledby="transactions-title">
+            <div class="section-heading transaction-heading">
+              <div><span class="section-kicker">ACCOUNT ACTIVITY</span><h2 id="transactions-title">Transaction history</h2></div>
+              <span class="transaction-demo-label"><i class="bi bi-info-circle"></i> Sample transactions</span>
+            </div>
+
+            <div class="transaction-toolbar">
+              <label class="transaction-search">
+                <i class="bi bi-search" aria-hidden="true"></i>
+                <span class="sr-only">Search transactions</span>
+                <input id="transaction-search" type="search" placeholder="Search transactions..." autocomplete="off">
+              </label>
+              <label class="transaction-status-filter">
+                <span class="sr-only">Filter by status</span>
+                <select id="status-filter" aria-label="Filter by status">
+                  <option value="all">All statuses</option>
+                  <option value="successful">Successful</option>
+                  <option value="processing">Processing</option>
+                  <option value="failed">Failed</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="transaction-filters" role="group" aria-label="Filter transactions by direction">
+              <button class="transaction-filter active" type="button" data-filter="all" aria-pressed="true">All activity</button>
+              <button class="transaction-filter" type="button" data-filter="credit" aria-pressed="false">Money in</button>
+              <button class="transaction-filter" type="button" data-filter="debit" aria-pressed="false">Money out</button>
+            </div>
+
+            <div class="transaction-table-header" aria-hidden="true">
+              <span>TRANSACTION</span><span>DATE</span><span>STATUS</span><span>AMOUNT</span>
+            </div>
+            <div class="transaction-list all-transaction-list" id="transaction-list">
+              <article class="transaction-row history-row" data-type="debit" data-status="successful" data-search="airtime purchase mtn phone 0803 successful">
+                <span class="transaction-icon transaction-icon-airtime"><i class="bi bi-phone-fill"></i></span>
+                <span class="transaction-description"><strong>Airtime purchase</strong><small>MTN · 0803 ••• ••24</small></span>
+                <span class="transaction-date">Today, 10:42 AM</span>
+                <span class="transaction-status status-complete"><i class="bi bi-check-circle-fill"></i> Successful</span>
+                <strong class="transaction-amount amount-debit">− ₦1,000.00</strong>
+              </article>
+              <article class="transaction-row history-row" data-type="credit" data-status="successful" data-search="wallet funding bank transfer 4821 successful">
+                <span class="transaction-icon transaction-icon-fund"><i class="bi bi-plus-lg"></i></span>
+                <span class="transaction-description"><strong>Wallet funding</strong><small>Bank transfer · •••• 4821</small></span>
+                <span class="transaction-date">Today, 9:15 AM</span>
+                <span class="transaction-status status-complete"><i class="bi bi-check-circle-fill"></i> Successful</span>
+                <strong class="transaction-amount amount-credit">+ ₦20,000.00</strong>
+              </article>
+              <article class="transaction-row history-row" data-type="debit" data-status="successful" data-search="data subscription airtel 5gb phone successful">
+                <span class="transaction-icon transaction-icon-data"><i class="bi bi-wifi"></i></span>
+                <span class="transaction-description"><strong>Data subscription</strong><small>Airtel · 5 GB plan</small></span>
+                <span class="transaction-date">Yesterday, 4:30 PM</span>
+                <span class="transaction-status status-complete"><i class="bi bi-check-circle-fill"></i> Successful</span>
+                <strong class="transaction-amount amount-debit">− ₦2,000.00</strong>
+              </article>
+              <article class="transaction-row history-row" data-type="debit" data-status="processing" data-search="tv subscription dstv compact smartcard processing">
+                <span class="transaction-icon transaction-icon-tv"><i class="bi bi-tv-fill"></i></span>
+                <span class="transaction-description"><strong>TV subscription</strong><small>DStv · Compact</small></span>
+                <span class="transaction-date">Oct 21, 2:08 PM</span>
+                <span class="transaction-status status-pending"><i class="bi bi-clock-fill"></i> Processing</span>
+                <strong class="transaction-amount amount-debit">− ₦10,500.00</strong>
+              </article>
+              <article class="transaction-row history-row" data-type="debit" data-status="successful" data-search="electricity bill ikeja electric prepaid meter successful">
+                <span class="transaction-icon transaction-icon-electricity"><i class="bi bi-lightning-charge-fill"></i></span>
+                <span class="transaction-description"><strong>Electricity bill</strong><small>Ikeja Electric · Prepaid</small></span>
+                <span class="transaction-date">Oct 20, 11:16 AM</span>
+                <span class="transaction-status status-complete"><i class="bi bi-check-circle-fill"></i> Successful</span>
+                <strong class="transaction-amount amount-debit">− ₦5,000.00</strong>
+              </article>
+              <article class="transaction-row history-row" data-type="credit" data-status="successful" data-search="wallet funding card payment 9914 successful">
+                <span class="transaction-icon transaction-icon-fund"><i class="bi bi-plus-lg"></i></span>
+                <span class="transaction-description"><strong>Wallet funding</strong><small>Card payment · •••• 9914</small></span>
+                <span class="transaction-date">Oct 19, 8:02 AM</span>
+                <span class="transaction-status status-complete"><i class="bi bi-check-circle-fill"></i> Successful</span>
+                <strong class="transaction-amount amount-credit">+ ₦15,000.00</strong>
+              </article>
+            </div>
+            <p class="empty-transactions" id="empty-transactions" hidden>No transactions match your filters.</p>
+          </section>
+          <p class="dashboard-disclaimer"><i class="bi bi-info-circle"></i> Demo transaction history — all names, dates, statuses and amounts shown are sample data.</p>
+        </main>
+      </div>
+    </div>
+
+    <footer class="site-footer transaction-footer">
+      <div class="container transaction-footer-inner">
+        <a class="brand brand-light" href="./index.html#home"><span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span><span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span></a>
+        <p>Need help? <a href="./contact.html">Contact our support team</a>.</p>
+        <span>© 2025 VTU9JA. All rights reserved.</span>
+      </div>
+    </footer>
+    <div class="sidebar-scrim" hidden></div>
+    <div class="dashboard-toast transaction-toast" role="status" aria-live="polite"></div>
+    <script>
+      const sidebar = document.querySelector("#dashboard-sidebar");
+const menuToggle = document.querySelector(".dashboard-menu-toggle");
+const sidebarScrim = document.querySelector(".sidebar-scrim");
+const siteMenuButton = document.querySelector(".site-header .menu-toggle");
+const siteNavigation = document.querySelector(".site-header .main-nav");
+const searchInput = document.querySelector("#transaction-search");
+const statusFilter = document.querySelector("#status-filter");
+const filterButtons = document.querySelectorAll(".transaction-filter");
+const rows = Array.from(document.querySelectorAll(".history-row"));
+const emptyState = document.querySelector("#empty-transactions");
+const countLabel = document.querySelector("#transaction-count");
+const toast = document.querySelector(".transaction-toast");
+let activeType = "all";
+let toastTimeout;
+
+function setSidebarOpen(isOpen) {
+  sidebar.classList.toggle("open", isOpen);
+  sidebarScrim.hidden = !isOpen;
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute("aria-label", isOpen ? "Close dashboard menu" : "Open dashboard menu");
+  menuToggle.innerHTML = `<i class="bi bi-${isOpen ? "x-lg" : "list"}"></i>`;
+}
+
+function updateTransactions() {
+  const query = searchInput.value.trim().toLowerCase();
+  const status = statusFilter.value;
+  let visibleCount = 0;
+
+  rows.forEach((row) => {
+    const matchesType = activeType === "all" || row.dataset.type === activeType;
+    const matchesStatus = status === "all" || row.dataset.status === status;
+    const matchesQuery = !query || row.dataset.search.includes(query);
+    const visible = matchesType && matchesStatus && matchesQuery;
+    row.hidden = !visible;
+    visibleCount += Number(visible);
+  });
+
+  emptyState.hidden = visibleCount > 0;
+  countLabel.textContent = String(visibleCount);
+}
+
+function showToast(message) {
+  toast.textContent = message;
+  toast.classList.add("visible");
+  window.clearTimeout(toastTimeout);
+  toastTimeout = window.setTimeout(() => toast.classList.remove("visible"), 3200);
+}
+
+siteMenuButton.addEventListener("click", () => {
+  const isOpen = siteNavigation.classList.toggle("open");
+  siteMenuButton.setAttribute("aria-expanded", String(isOpen));
+  siteMenuButton.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+  siteMenuButton.innerHTML = `<i class="bi bi-${isOpen ? "x-lg" : "list"}"></i>`;
+});
+
+siteNavigation.addEventListener("click", (event) => {
+  if (event.target.closest("a")) {
+    siteNavigation.classList.remove("open");
+    siteMenuButton.setAttribute("aria-expanded", "false");
+    siteMenuButton.setAttribute("aria-label", "Open navigation");
+    siteMenuButton.innerHTML = '<i class="bi bi-list"></i>';
+  }
+});
+
+menuToggle.addEventListener("click", () => {
+  setSidebarOpen(!sidebar.classList.contains("open"));
+});
+
+sidebarScrim.addEventListener("click", () => setSidebarOpen(false));
+
+document.querySelector(".notification-button").addEventListener("click", () => {
+  showToast("You're all caught up on notifications.");
+});
+
+searchInput.addEventListener("input", updateTransactions);
+statusFilter.addEventListener("change", updateTransactions);
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    activeType = button.dataset.filter;
+    filterButtons.forEach((filterButton) => {
+      const isActive = filterButton === button;
+      filterButton.classList.toggle("active", isActive);
+      filterButton.setAttribute("aria-pressed", String(isActive));
+    });
+    updateTransactions();
+  });
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 760 && sidebar.classList.contains("open")) {
+    setSidebarOpen(false);
+  }
+});
+
+    </script>
+  </body>
+</html>

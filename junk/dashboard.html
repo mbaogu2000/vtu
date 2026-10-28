@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#073d31">
+    <meta name="description" content="Manage your VTU9JA wallet, services and transactions from your dashboard.">
+    <title>Dashboard — VTU9JA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./dist/styles.css">
+    <link rel="stylesheet" href="./dashboard.css">
+  </head>
+  <body class="dashboard-page">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-contact">
+          <a href="tel:+2347033936505"><i class="bi bi-telephone-fill"></i> +234 7033936505</a>
+          <a href="mailto:support@vtu9ja.ng"><i class="bi bi-envelope"></i> support@vtu9ja.ng</a>
+        </div>
+        <div class="topbar-account">
+          <a href="./login.html"><i class="bi bi-person-fill"></i> Login</a>
+          <a href="./register.html"><i class="bi bi-person-plus-fill"></i> Register</a>
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html#home" aria-label="VTU9JA home">
+          <span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
+          <span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i class="bi bi-list"></i></button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="./index.html#home">Home</a>
+          <a href="./buy-airtime.html">Airtime</a>
+          <a href="./buy-data.html">Data</a>
+          <a href="./pay-bills.html?type=tv">TV</a>
+          <a href="./pay-bills.html?type=electricity">Electricity</a>
+          <a href="./exam-pins.html">Exam Pins</a>
+          <a href="./more-services.html">More Services</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <a class="button button-nav" href="./dashboard.html"><i class="bi bi-grid-1x2-fill"></i> My Dashboard</a>
+      </div>
+    </header>
+    <div class="dashboard-app">
+      <aside class="dashboard-sidebar" id="dashboard-sidebar" aria-label="Dashboard navigation">
+        <a class="dashboard-brand" href="./index.html" aria-label="VTU9JA home">
+          <span class="dashboard-brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>
+          <span class="dashboard-brand-copy"><strong>VTU9<span>JA</span></strong><small>USER DASHBOARD</small></span>
+        </a>
+        <div class="sidebar-caption">MENU</div>
+        <nav class="dashboard-nav" aria-label="Account menu">
+          <a class="dashboard-nav-link active" href="#overview" aria-current="page"><i class="bi bi-grid-1x2-fill"></i><span>Overview</span></a>
+          <a class="dashboard-nav-link" href="./buy-airtime.html"><i class="bi bi-phone"></i><span>Buy Airtime</span></a>
+          <a class="dashboard-nav-link" href="./buy-data.html"><i class="bi bi-wifi"></i><span>Buy Data</span></a>
+          <a class="dashboard-nav-link" href="./pay-bills.html"><i class="bi bi-lightning-charge"></i><span>Pay Bills</span></a>
+          <a class="dashboard-nav-link" href="./exam-pins.html"><i class="bi bi-mortarboard"></i><span>Exam Pins</span></a>
+          <a class="dashboard-nav-link" href="./more-services.html"><i class="bi bi-three-dots"></i><span>More Services</span></a>
+          <a class="dashboard-nav-link" href="./transactions.html"><i class="bi bi-clock-history"></i><span>Transactions</span></a>
+        </nav>
+        <div class="sidebar-caption sidebar-caption-account">ACCOUNT</div>
+        <nav class="dashboard-nav" aria-label="Account support">
+          <a class="dashboard-nav-link" href="./profile.html"><i class="bi bi-person"></i><span>My Profile</span></a>
+          <a class="dashboard-nav-link" href="./contact.html"><i class="bi bi-headset"></i><span>Help &amp; Support</span></a>
+          <a class="dashboard-nav-link" href="./login.html"><i class="bi bi-box-arrow-left"></i><span>Sign out</span></a>
+        </nav>
+        <div class="sidebar-help">
+          <span class="sidebar-help-icon"><i class="bi bi-headset"></i></span>
+          <strong>Need a hand?</strong>
+          <p>Our support team is ready to help, any time.</p>
+          <a href="./contact.html">Contact support <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <a class="sidebar-home" href="./index.html"><i class="bi bi-arrow-left"></i> Back to VTU9JA</a>
+      </aside>
+
+      <div class="dashboard-main">
+        <header class="dashboard-topbar">
+          <button class="dashboard-menu-toggle" type="button" aria-label="Open dashboard menu" aria-expanded="false" aria-controls="dashboard-sidebar">
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="topbar-page-title"><span>Workspace</span><i class="bi bi-chevron-right"></i><strong>Overview</strong></div>
+          <div class="topbar-actions">
+            <span class="demo-tag"><i class="bi bi-stars"></i> Demo account</span>
+            <button class="icon-button notification-button" type="button" aria-label="Notifications">
+              <i class="bi bi-bell"></i><span class="notification-dot"></span>
+            </button>
+            <a class="profile-chip" href="./profile.html">
+              <span class="avatar">CO</span>
+              <span class="profile-chip-copy"><strong>Chioma Okafor</strong><small>Personal account</small></span>
+              <i class="bi bi-chevron-down profile-chevron"></i>
+            </a>
+          </div>
+        </header>
+
+        <main class="dashboard-content" id="overview">
+          <section class="welcome-row">
+            <div>
+              <span class="welcome-date"><i class="bi bi-sun"></i> YOUR ACCOUNT AT A GLANCE</span>
+              <h1>Good morning, Chioma <span>👋</span></h1>
+              <p>Here's what's happening with your VTU9JA account today.</p>
+            </div>
+            <button class="outline-button" type="button" data-open-wallet><i class="bi bi-plus-lg"></i> Fund wallet</button>
+          </section>
+
+          <section class="dashboard-summary" aria-label="Account summary">
+            <article class="wallet-card">
+              <div class="wallet-topline"><span><i class="bi bi-wallet2"></i> Wallet balance</span><button class="balance-toggle" type="button" aria-label="Hide wallet balance" aria-pressed="false"><i class="bi bi-eye"></i></button></div>
+              <strong class="wallet-amount" data-balance="₦48,250.50">₦48,250.50</strong>
+              <span class="wallet-caption">Available to spend</span>
+              <div class="wallet-bottom">
+                <span><i class="bi bi-shield-check"></i> Wallet secured</span>
+                <button type="button" data-open-wallet>+ Add money</button>
+              </div>
+              <span class="wallet-decoration wallet-decoration-one"></span>
+              <span class="wallet-decoration wallet-decoration-two"></span>
+            </article>
+            <article class="summary-card">
+              <div class="summary-card-top"><span class="summary-icon summary-icon-green"><i class="bi bi-arrow-down-left"></i></span><span class="summary-change"><i class="bi bi-arrow-up-right"></i> This month</span></div>
+              <span class="summary-label">Money in</span><strong>₦75,000.00</strong><small>Wallet funding</small>
+            </article>
+            <article class="summary-card">
+              <div class="summary-card-top"><span class="summary-icon summary-icon-blue"><i class="bi bi-arrow-up-right"></i></span><span class="summary-neutral">This month</span></div>
+              <span class="summary-label">Money spent</span><strong>₦26,749.50</strong><small>Across 18 transactions</small>
+            </article>
+          </section>
+
+          <section class="dashboard-section quick-services" aria-labelledby="services-title">
+            <div class="section-heading">
+              <div><span class="section-kicker">GET STARTED</span><h2 id="services-title">What would you like to do?</h2></div>
+              <span class="section-hint">Choose a service to continue</span>
+            </div>
+            <div class="service-actions">
+              <a class="service-action" href="./buy-airtime.html">
+                <span class="service-action-icon service-action-airtime"><i class="bi bi-phone-fill"></i></span><strong>Buy Airtime</strong><small>Top up any network</small><span class="service-action-arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </a>
+              <a class="service-action" href="./buy-data.html">
+                <span class="service-action-icon service-action-data"><i class="bi bi-wifi"></i></span><strong>Buy Data</strong><small>Browse without limits</small><span class="service-action-arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </a>
+              <a class="service-action" href="./pay-bills.html?type=tv">
+                <span class="service-action-icon service-action-tv"><i class="bi bi-tv-fill"></i></span><strong>TV Subscription</strong><small>Renew your package</small><span class="service-action-arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </a>
+              <a class="service-action" href="./pay-bills.html?type=electricity">
+                <span class="service-action-icon service-action-electricity"><i class="bi bi-lightning-charge-fill"></i></span><strong>Electricity</strong><small>Pay your power bill</small><span class="service-action-arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </a>
+              <a class="service-action" href="./exam-pins.html">
+                <span class="service-action-icon service-action-exam"><i class="bi bi-mortarboard-fill"></i></span><strong>Exam Pins</strong><small>Get exam-ready</small><span class="service-action-arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </a>
+              <a class="service-action" href="./more-services.html">
+                <span class="service-action-icon service-action-more"><i class="bi bi-three-dots"></i></span><strong>More Services</strong><small>Explore more options</small><span class="service-action-arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </a>
+              <button class="service-action" type="button" data-open-wallet>
+                <span class="service-action-icon service-action-wallet"><i class="bi bi-plus-circle-fill"></i></span><strong>Fund Wallet</strong><small>Add money securely</small><span class="service-action-arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </button>
+            </div>
+          </section>
+
+          <section class="dashboard-lower-grid">
+            <section class="dashboard-section transactions-card" id="transactions" aria-labelledby="transactions-title">
+              <div class="section-heading transaction-heading">
+                <div><span class="section-kicker">YOUR ACTIVITY</span><h2 id="transactions-title">Recent transactions</h2></div>
+                <a class="text-link" href="./transactions.html">View all <i class="bi bi-arrow-right"></i></a>
+              </div>
+              <div class="transaction-filters" role="group" aria-label="Filter transactions">
+                <button class="transaction-filter active" type="button" data-filter="all" aria-pressed="true">All activity</button>
+                <button class="transaction-filter" type="button" data-filter="credit" aria-pressed="false">Money in</button>
+                <button class="transaction-filter" type="button" data-filter="debit" aria-pressed="false">Money out</button>
+              </div>
+              <div class="transaction-list">
+                <article class="transaction-row" data-type="debit">
+                  <span class="transaction-icon transaction-icon-airtime"><i class="bi bi-phone-fill"></i></span>
+                  <span class="transaction-description"><strong>Airtime purchase</strong><small>MTN · 0803 ••• ••24</small></span>
+                  <span class="transaction-date">Today, 10:42 AM</span>
+                  <span class="transaction-status status-complete"><i class="bi bi-check-circle-fill"></i> Successful</span>
+                  <strong class="transaction-amount amount-debit">− ₦1,000.00</strong>
+                </article>
+                <article class="transaction-row" data-type="credit">
+                  <span class="transaction-icon transaction-icon-fund"><i class="bi bi-plus-lg"></i></span>
+                  <span class="transaction-description"><strong>Wallet funding</strong><small>Bank transfer ·•••• 4821</small></span>
+                  <span class="transaction-date">Today, 9:15 AM</span>
+                  <span class="transaction-status status-complete"><i class="bi bi-check-circle-fill"></i> Successful</span>
+                  <strong class="transaction-amount amount-credit">+ ₦20,000.00</strong>
+                </article>
+                <article class="transaction-row" data-type="debit">
+                  <span class="transaction-icon transaction-icon-data"><i class="bi bi-wifi"></i></span>
+                  <span class="transaction-description"><strong>Data subscription</strong><small>Airtel · 5GB plan</small></span>
+                  <span class="transaction-date">Yesterday, 4:30 PM</span>
+                  <span class="transaction-status status-complete"><i class="bi bi-check-circle-fill"></i> Successful</span>
+                  <strong class="transaction-amount amount-debit">− ₦2,000.00</strong>
+                </article>
+                <article class="transaction-row" data-type="debit">
+                  <span class="transaction-icon transaction-icon-tv"><i class="bi bi-tv-fill"></i></span>
+                  <span class="transaction-description"><strong>TV subscription</strong><small>DStv · Compact</small></span>
+                  <span class="transaction-date">Oct 21, 2:08 PM</span>
+                  <span class="transaction-status status-pending"><i class="bi bi-clock-fill"></i> Processing</span>
+                  <strong class="transaction-amount amount-debit">− ₦10,500.00</strong>
+                </article>
+              </div>
+              <p class="empty-transactions" hidden>No transactions in this category yet.</p>
+            </section>
+
+            <aside class="dashboard-side-column">
+              <section class="profile-card" id="profile" aria-labelledby="profile-title">
+                <div class="side-card-heading"><span><i class="bi bi-person-vcard"></i></span><a href="./profile.html" aria-label="View profile"><i class="bi bi-arrow-up-right"></i></a></div>
+                <span class="section-kicker">YOUR ACCOUNT</span>
+                <h2 id="profile-title">Account profile</h2>
+                <div class="profile-detail"><i class="bi bi-person"></i><span><small>Full name</small><strong>Chioma Okafor</strong></span></div>
+                <div class="profile-detail"><i class="bi bi-telephone"></i><span><small>Phone number</small><strong>0803 ••• ••24</strong></span></div>
+                <div class="profile-detail"><i class="bi bi-envelope"></i><span><small>Email address</small><strong>chioma@example.com</strong></span></div>
+                <a class="profile-edit-link" href="./profile.html">View full profile <i class="bi bi-arrow-right"></i></a>
+              </section>
+              <section class="dashboard-tip">
+                <span class="tip-icon"><i class="bi bi-lightbulb-fill"></i></span>
+                <div><strong>Quick tip</strong><p>Fund your wallet once and enjoy faster payments for all your services.</p><button type="button" data-open-wallet>Fund wallet <i class="bi bi-arrow-right"></i></button></div>
+              </section>
+            </aside>
+          </section>
+          <p class="dashboard-disclaimer"><i class="bi bi-info-circle"></i> Demo dashboard — the profile and transaction details shown are sample data.</p>
+        </main>
+      </div>
+    </div>
+
+    <footer class="site-footer" id="footer">
+      <div class="container footer-main">
+        <div class="footer-about">
+          <a class="brand brand-light" href="./index.html#home"><span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span><span class="brand-copy"><span class="brand-name">VTU9<span>JA</span></span><span class="brand-tagline">Fast · Secure · Reliable</span></span></a>
+          <p>Your one-stop VTU platform for airtime, data, TV subscription, electricity bills and more. Stay connected. Always.</p>
+          <div class="social-links"><a href="#footer" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#footer" aria-label="X"><i class="bi bi-twitter-x"></i></a><a href="#footer" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#footer" aria-label="YouTube"><i class="bi bi-youtube"></i></a></div>
+        </div>
+        <div class="footer-column"><h2>Quick Links</h2><div class="footer-link-grid"><a href="./index.html#home">Home</a><a href="./exam-pins.html">Exam Pins</a><a href="./buy-airtime.html">Airtime</a><a href="./more-services.html">More Services</a><a href="./buy-data.html">Data</a><a href="./about.html">About Us</a><a href="./pay-bills.html?type=tv">TV Subscription</a><a href="./contact.html">Contact</a><a href="./pay-bills.html?type=electricity">Electricity Bills</a></div></div>
+        <div class="footer-column"><h2>Help &amp; Support</h2><a href="./contact.html">FAQs</a><a href="./contact.html">Terms &amp; Conditions</a><a href="./contact.html">Privacy Policy</a><a href="./contact.html">Refund Policy</a><a href="./index.html#get-started">How It Works</a></div>
+        <div class="footer-newsletter"><h2>Subscribe to Our Newsletter</h2><p>Get the latest updates and offers.</p><form id="newsletter-form"><label class="sr-only" for="newsletter-email">Your email address</label><input id="newsletter-email" type="email" placeholder="Enter your email address" required><button type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button></form></div>
+      </div>
+      <div class="footer-bottom"><div class="container footer-bottom-inner"><span>© 2025 VTU9JA. All rights reserved.</span><div><span><i class="bi bi-shield-check"></i> Secure Payments</span><span>24/7 Support</span><span>Fast Delivery</span></div></div></div>
+    </footer>
+    <div class="sidebar-scrim" hidden></div>
+    <dialog class="action-dialog" aria-labelledby="action-dialog-title">
+      <form method="dialog" class="dialog-close-form"><button class="dialog-close" aria-label="Close dialog"><i class="bi bi-x-lg"></i></button></form>
+      <span class="dialog-icon"><i class="bi bi-lightning-charge-fill"></i></span>
+      <span class="section-kicker" id="dialog-kicker">DEMO ACTION</span>
+      <h2 id="action-dialog-title">Continue</h2>
+      <p class="dialog-description">This is a demo dashboard. No payment or service transaction will be processed.</p>
+      <form class="dialog-action-form">
+        <label class="dialog-field" id="phone-field"><span>Phone number or account</span><input name="recipient" type="tel" inputmode="tel" placeholder="Enter phone or account number" required></label>
+        <label class="dialog-field"><span>Amount (₦)</span><input name="amount" type="number" inputmode="decimal" min="100" step="50" placeholder="e.g. 1,000" required></label>
+        <button class="dialog-submit" type="submit">Continue <i class="bi bi-arrow-right"></i></button>
+      </form>
+      <p class="dialog-notice" role="status" aria-live="polite"></p>
+    </dialog>
+    <div class="dashboard-toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./dashboard.js"></script>
+  </body>
+</html>
